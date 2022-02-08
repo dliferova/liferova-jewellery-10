@@ -1,3 +1,4 @@
-h1 {
-  color: red;
-}
+//Global
+@import "global/global.scss";
+@import "global/mixins.scss";
+@import "global/variables.scss";
