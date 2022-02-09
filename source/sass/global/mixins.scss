@@ -3,3 +3,11 @@
   padding: 0;
   margin: 0;
 }
+
+@mixin font-family-cormorant-garamond {
+  font-family: "Cormorant Garamond", "Arial", sans-serif;
+}
+
+@mixin font-family-poppins {
+  font-family: "Poppins", "Arial", sans-serif;
+}
