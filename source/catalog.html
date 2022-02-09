@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en" class="page">
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="Jewellery - jewellery catalog.">
+  <link rel="preload" href="fonts/cormorant-garamond-bold.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/cormorant-garamond-semibold.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/poppins-medium.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/poppins-regular.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="icon" href="favicon.ico">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Jewellery</title>
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+<body class="page__body">
+<header class="page-header">
+  <div class="page-header__wrapper">
+    <div class="page-header__search">
+      <div class="search-bar">
+        <div class="search-bar__wrapper">
+          <button class="search-bar__button" type="submit"></button>
+          <input class="search-bar__input" type="text" placeholder="Type here to search" id="search">
+          <label for="search"></label>
+        </div>
+      </div>
+    </div>
+    <div class="page-header__middle-content">
+      <div class="page-header__logo">
+        <a href="">
+          <img src="img/icons/logo.svg" width="66" height="66" alt="Jewellery logo">
+        </a>
+      </div>
+      <div class="page-header__navigation">
+        <nav class="catalog-navigation">
+          <div class="catalog-navigation__wrapper">
+            <ul class="catalog-navigation__list">
+              <li>
+                <a href="index.html">What’s new</a>
+              </li>
+              <li>
+                <a>Chokers</a>
+              </li>
+              <li>
+                <a>Necklaces</a>
+              </li>
+              <li>
+                <a>Rings</a>
+              </li>
+              <li>
+                <a>Earrings</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </div>
+    <div class="page-header__user-info">
+      <div class="page-header__login">
+        <button type="button">
+          <span>Login</span>
+        </button>
+      </div>
+      <div class="page-header__cart">
+        <button type="button">
+          <span>Cart <span class="cart-counter">0</span></span>
+        </button>
+      </div>
+      <section class="modal visually-hidden">
+        <div class="modal__wrapper">
+          <button type="button"><span class="visually-hidden">Close</span></button>
+          <h2>Login</h2>
+          <div class="modal__login">
+            <form class="modal__form">
+              <ul class="modal__form-list">
+                <li class="modal__list-item">
+                  <input type="text" id="user-email" placeholder="Your E-mail">
+                  <label for="user-email"></label>
+                </li>
+                <li class="modal__list-item">
+                  <input type="text" id="user-password" placeholder="Password">
+                  <label for="user-password"></label>
+                  <button type="button">Forgot your password</button>
+                </li>
+              </ul>
+              <button type="submit"><span>Log In</span></button>
+            </form>
+            <div class="modal__register">
+              <p>Don’t have an account?</p>
+              <a href="#">Sign up</a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <div class="page-header__promo-section">
+      <section class="promo-section">
+        <div class="promo-section__container">
+          <div class="promo-section__slogan">
+            <p>All Jewellery</p>
+            <p>Discover picks of fashion's finest trends in our jewellery catalog</p>
+          </div>
+        </div>
+      </section>
+    </div>
+  </div>
+</header>
+
+<main class="page-main">
+  <h1 class="visually-hidden">Jewellery - jewellery catalog</h1>
+
+  <section class="filters">
+    <h2 class="visually-hidden">Фильтр товаров</h2>
+    <form class="filter" method="get" action="https://echo.htmlacademy.ru">
+      <fieldset>
+        <legend>Product</legend>
+        <ul>
+          <li class="filter-checkbox">
+            <input class="visually-hidden filter-input filter-input-checkbox"
+                   type="checkbox"
+                   name="necklaces"
+                   id="filter-necklaces"
+                   checked>
+            <label for="filter-necklaces">Necklaces</label>
+          </li>
+          <li class="filter-checkbox">
+            <input class="visually-hidden filter-input filter-input-checkbox"
+                   type="checkbox"
+                   name="chokers"
+                   id="filter-chokers"
+                   checked>
+            <label for="filter-chokers">Chokers</label>
+          </li>
+          <li class="filter-checkbox">
+            <input class="visually-hidden filter-input filter-input-checkbox"
+                   type="checkbox"
+                   name="rings"
+                   id="filter-rings">
+            <label for="filter-rings">Rings</label>
+          </li>
+          <li class="filter-checkbox">
+            <input class="visually-hidden filter-input filter-input-checkbox"
+                   type="checkbox"
+                   name="earrings"
+                   id="filter-earrings"
+                   checked>
+            <label for="filter-earrings">Earrings</label>
+          </li>
+        </ul>
+      </fieldset>
+      <fieldset>
+        <legend>Material</legend>
+        <ul>
+          <li class="filter-checkbox">
+            <input class="visually-hidden filter-input filter-input-checkbox"
+                   type="checkbox"
+                   name="material-gold"
+                   id="filter-material-gold"
+                   checked>
+            <label for="filter-material-gold">Gold</label>
+          </li>
+          <li class="filter-checkbox">
+            <input class="visually-hidden filter-input filter-input-checkbox"
+                   type="checkbox"
+                   name="material-silver"
+                   id="filter-material-silver"
+                   checked>
+            <label for="filter-material-silver">Silver</label>
+          </li>
+        </ul>
+      </fieldset>
+      <fieldset>
+        <legend>Collection</legend>
+        <ul>
+          <li class="filter-checkbox">
+            <input class="visually-hidden filter-input filter-input-checkbox"
+                   type="checkbox"
+                   name="collection-pink-flamingo"
+                   id="filter-collection-pink-flamingo"
+                   checked>
+            <label for="filter-collection-pink-flamingo">Pink flamingo</label>
+          </li>
+          <li class="filter-checkbox">
+            <input class="visually-hidden filter-input filter-input-checkbox"
+                   type="checkbox"
+                   name="collection-dreams"
+                   id="filter-collection-dreams"
+                   checked>
+            <label for="filter-collection-dreams">Dreams</label>
+          </li>
+        </ul>
+      </fieldset>
+      <fieldset>
+        <legend>Price</legend>
+      </fieldset>
+      <button type="submit" class="filter-button button">Apply</button>
+      <button type="button" class="filter-button_transparent button">Clear all</button>
+    </form>
+  </section>
+
+  <section class="catalog">
+    <div class="catalog__wrapper">
+      <ul class="catalog__list catalog-list">
+        <li class="catalog-list__item catalog-item">
+          <a href="#">
+            <p class="catalog-item__image">
+              <img src="img/catalog/bird-necklace.jpg" width="270" height="272" alt="Necklace with amethyst">
+            </p>
+            <h4 class="catalog-item__title">Double pearl earrings</h4>
+            <b class="catalog-item__price">$115</b>
+          </a>
+        </li>
+        <li class="catalog-list__item catalog-item">
+          <a href="#">
+            <p class="catalog-item__image">
+              <img src="img/catalog/bird-necklace.jpg" width="270" height="272" alt="Choker with gold bead">
+            </p>
+            <h4 class="catalog-item__title">Choker with gold bead</h4>
+            <b class="catalog-item__price">$55</b>
+          </a>
+        </li>
+        <li class="catalog-list__item catalog-item">
+          <a href="#">
+            <p class="catalog-item__image">
+              <img src="img/catalog/bird-necklace.jpg" width="270" height="272" alt="Gold layered necklace">
+            </p>
+            <h4 class="catalog-item__title">Gold layered necklace</h4>
+            <b class="catalog-item__price">$155</b>
+          </a>
+        </li>
+        <li class="catalog-list__item catalog-item">
+          <a href="#">
+            <p class="catalog-item__image">
+              <img src="img/catalog/bird-necklace.jpg" width="270" height="272" alt="Blue gemstone pendant">
+            </p>
+            <h4 class="catalog-item__title">Blue gemstone pendant</h4>
+            <b class="catalog-item__price">$105</b>
+          </a>
+        </li>
+        <li class="catalog-list__item catalog-item">
+          <a href="#">
+            <p class="catalog-item__image">
+              <img src="img/catalog/bird-necklace.jpg" width="270" height="272" alt="Boho earrings">
+            </p>
+            <h4 class="catalog-item__title">Boho earrings</h4>
+            <b class="catalog-item__price">$75</b>
+          </a>
+        </li>
+        <li class="catalog-list__item catalog-item">
+          <a href="#">
+            <p class="catalog-item__image">
+              <img src="img/catalog/bird-necklace.jpg" width="270" height="272" alt="Gold bird necklace">
+            </p>
+            <h4 class="catalog-item__title">Gold bird necklace</h4>
+            <b class="catalog-item__price">$135</b>
+          </a>
+        </li>
+        <li class="catalog-list__item catalog-item">
+          <a href="#">
+            <p class="catalog-item__image">
+              <img src="img/catalog/bird-necklace.jpg" width="270" height="272" alt="Black leather choker">
+            </p>
+            <h4 class="catalog-item__title">Black leather choker</h4>
+            <b class="catalog-item__price">$85</b>
+          </a>
+        </li>
+        <li class="catalog-list__item catalog-item">
+          <a href="#">
+            <p class="catalog-item__image">
+              <img src="img/catalog/bird-necklace.jpg" width="270" height="272" alt="Necklace with amethyst">
+            </p>
+            <h4 class="catalog-item__title">Necklace with amethyst</h4>
+            <b class="catalog-item__price">$145</b>
+          </a>
+        </li>
+        <li class="catalog-list__item catalog-item">
+          <a href="#">
+            <p class="catalog-item__image">
+              <img src="img/catalog/bird-necklace.jpg" width="270" height="272" alt="Elephant earrings">
+            </p>
+            <h4 class="catalog-item__title">Elephant earrings</h4>
+            <b class="catalog-item__price">$95</b>
+          </a>
+        </li>
+        <li class="catalog-list__item catalog-item">
+          <a href="#">
+            <p class="catalog-item__image">
+              <img src="img/catalog/bird-necklace.jpg" width="270" height="272" alt="Threader necklace">
+            </p>
+            <h4 class="catalog-item__title">Threader necklace</h4>
+            <b class="catalog-item__price">$115</b>
+          </a>
+        </li>
+        <li class="catalog-list__item catalog-item">
+          <a href="#">
+            <p class="catalog-item__image">
+              <img src="img/catalog/bird-necklace.jpg" width="270" height="272" alt="Origami crane necklace">
+            </p>
+            <h4 class="catalog-item__title">Origami crane necklace</h4>
+            <b class="catalog-item__price">$105</b>
+          </a>
+        </li>
+        <li class="catalog-list__item catalog-item">
+          <a href="#">
+            <p class="catalog-item__image">
+              <img src="img/catalog/bird-necklace.jpg" width="270" height="272" alt="Marble earrings">
+            </p>
+            <h4 class="catalog-item__title">Marble earrings</h4>
+            <b class="catalog-item__price">$95</b>
+          </a>
+        </li>
+      </ul>
+      <button type="button"><span>Previous</span></button>
+      <ul class="pagination-list">
+        <li class="pagination-item pagination-item-current"><a>1</a></li>
+        <li class="pagination-item"><a href="#">2</a></li>
+        <li class="pagination-item"><a href="#">3</a></li>
+        <li class="pagination-item"><a href="#">4</a></li>
+      </ul>
+      <button type="button"><span>Next</span></button>
+    </div>
+  </section>
+
+</main>
+
+<footer class="page-footer">
+  <div class="page-footer__wrapper">
+    <div class="page-footer__subscription">
+      <div class="subscription">
+        <p>The good stuff in your inbox</p>
+        <p>News and updates from CH. No spam, we promise.</p>
+        <div class="subscription__info">
+          <input type="text" id="user-subscribe-email" placeholder="Your E-mail">
+          <label for="user-subscribe-email"></label>
+          <a href="#">Sign up</a>
+        </div>
+      </div>
+    </div>
+    <div class="page-footer__navigation">
+      <nav class="site-navigation">
+        <div class="site-navigation__wrapper">
+          <ul class="site-navigation__list">
+            <li class="site-navigation__item">
+              <a>Ordering & Payment</a>
+            </li>
+            <li class="site-navigation__item">
+              <a>Terms & Conditions</a>
+            </li>
+            <li class="site-navigation__item">
+              <a>Returns & Exchanges</a>
+            </li>
+            <li class="site-navigation__item">
+              <a>Delivery</a>
+            </li>
+            <li class="site-navigation__item">
+              <a>About CH</a>
+            </li>
+            <li class="site-navigation__item">
+              <a>Stores & Hours</a>
+            </li>
+            <li class="site-navigation__item">
+              <a>Jobs</a>
+            </li>
+            <li class="site-navigation__item">
+              <a>Contact Us</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+    <div class="page-footer__social-links">
+      <div class="social">
+        <ul class="social-list">
+          <li class="social__item">
+            <a class="social__link social__link_facebook" href="#">
+              <span>Facebook</span>
+              <svg class="social__link-icon social__link-icon_fb">
+                <use></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link_instagram" href="#">
+              <span>Instagram</span>
+              <svg class="social__link-icon social__link-icon_inst">
+                <use></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link_pinterest" href="#">
+              <span>Pinterest</span>
+              <svg class="social__link-icon social__link-icon_pinterest">
+                <use></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link_twitter" href="#">
+              <span>Twitter</span>
+              <svg class="social__link-icon social__link-icon_twitter">
+                <use></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</footer>
+</body>
+</html>
