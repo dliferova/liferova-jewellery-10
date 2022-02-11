@@ -1,0 +1,25 @@
+.link {
+  cursor: pointer;
+}
+
+.link_ordinary {
+  font-size: 14px;
+  font-weight: 500;
+  color: $text-black;
+}
+
+.link_ordinary:hover {
+  color: $grey;
+}
+
+.link_theme_grey {
+  font-size: 12px;
+  color: $grey;
+  display: flex;
+  justify-content: flex-end;
+  padding: 10px 0 0;
+}
+
+.link_theme_grey:hover {
+  color: $text-black;
+}

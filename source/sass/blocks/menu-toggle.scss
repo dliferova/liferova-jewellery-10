@@ -1,0 +1,14 @@
+.menu-toggle {
+  background-color: transparent;
+  border: none;
+  width: 25px;
+  height: 25px;
+  position: relative;
+}
+
+.menu-toggle__icon-menu {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}

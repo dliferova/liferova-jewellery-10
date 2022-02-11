@@ -1,0 +1,20 @@
+.site-navigation__list {
+  @include resetting-styles-list;
+}
+
+.site-navigation_theme_mobile {
+  @media (min-width: $desktop-width-min) {
+    display: none;
+  }
+}
+
+.site-navigation__list li {
+  margin: 0 0 30px;
+}
+
+.site-navigation__list a {
+  color: rgba($white, 0.75);
+  font-size: 18px;
+  line-height: 130%;
+  font-weight: 500;
+}

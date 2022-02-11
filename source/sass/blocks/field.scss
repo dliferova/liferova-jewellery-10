@@ -1,0 +1,15 @@
+.field input {
+  width: 100%;
+  padding: 0 0 8px;
+  @include font-family-poppins;
+  color: $grey;
+  border: none;
+  font-size: 14px;
+  border-bottom: 1px solid black;
+  background-color: inherit;
+  cursor: pointer;
+}
+
+.field input:focus-visible {
+  outline: none;
+}

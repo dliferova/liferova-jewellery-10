@@ -1,0 +1,11 @@
+.cart__icon {
+  @media (min-width: $desktop-width-min) {
+    display: none;
+  }
+}
+
+.cart__label {
+  @media (max-width: $tablet-width-max) {
+    display: none;
+  }
+}

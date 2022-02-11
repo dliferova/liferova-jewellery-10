@@ -1,0 +1,64 @@
+.search-bar__form {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.search-bar__input {
+  border: none;
+  cursor: pointer;
+
+  @media (max-width: $tablet-width-max) {
+    width: 100%;
+    min-height: 40px;
+    padding: 0 20px 0 60px;
+    color: $white;
+    background-color: rgba($white, 0.15);
+    line-height: 21px;
+    font-size: 18px;
+    border-radius: 21px;
+    position: relative;
+  }
+}
+
+.search-bar__button {
+  border: none;
+  background-color: transparent;
+  width: 18px;
+  height: 18px;
+  position: relative;
+  margin: 0 15px 0 0;
+  cursor: pointer;
+
+  @media (max-width: $tablet-width-max) {
+    margin: 0;
+    position: absolute;
+    left: 52px;
+    z-index: 4;
+  }
+}
+
+.search-bar__button::before {
+  content: "";
+  width: 14px;
+  height: 14px;
+  background: url("../img/icons/loupe.svg");
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.search-bar__input::placeholder {
+  font-size: 14px;
+  color: $grey;
+  font-weight: 500;
+
+  @media (max-width: $tablet-width-max) {
+    color: transparent;
+  }
+}
+
+.search-bar__input:focus-visible {
+  outline: none;
+}

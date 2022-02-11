@@ -1,0 +1,64 @@
+.modal__wrapper {
+  width: 430px;
+  min-height: 568px;
+  margin: 0 auto;
+  background-image: url("../img/sweet-ice-cream-photography.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 138px;
+  background-color: #F0EAE4;
+  padding: 180px 0 60px;
+}
+
+.modal h2 {
+  @include font-family-cormorant-garamond;
+  font-size: 34px;
+  line-height: 130%;
+  margin: 0 0 42px;
+  text-align: center;
+}
+
+.modal__login {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  max-width: 340px;
+  margin: 0 auto;
+}
+
+.modal__form-list {
+  @include resetting-styles-list;
+}
+
+.modal__button {
+  width: 100%;
+  display: inline-flex;
+  justify-content: center;
+  padding: 24px 0;
+  border: none;
+  background-color: #A87B62;
+  color: $white;
+  font-size: 16px;
+  line-height: 130%;
+  margin: 0 0 28px;
+  cursor: pointer;
+}
+
+.modal__register {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal__register p {
+  color: $grey;
+  font-size: 14px;
+  margin: 0 15px 0 0;
+}
+
+.modal__list-item {
+  margin: 0 0 40px;
+}
+
+.modal__list-item:last-child {
+  margin: 0 0 50px;
+}

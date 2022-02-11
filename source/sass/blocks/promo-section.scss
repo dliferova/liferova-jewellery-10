@@ -1,0 +1,29 @@
+.promo-section__container {
+  background-image: linear-gradient(rgba($gradient, 0.7), rgba($gradient, 0.7)), url("../img/main-promo-photo.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: auto 100%;
+  min-height: 463px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.promo-section__slogan p {
+  @include font-family-cormorant-garamond;
+  line-height: 130%;
+  color: $white;
+  margin: 0;
+}
+
+.promo-section__text {
+  font-size: 38px;
+  font-style: italic;
+  font-weight: 400;
+}
+
+.promo-section__lead {
+  font-size: 45px;
+  text-transform: uppercase;
+  font-weight: 700;
+}
