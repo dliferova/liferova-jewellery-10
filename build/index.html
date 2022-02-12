@@ -272,17 +272,19 @@
       <div class="page-footer__wrapper">
         <div class="page-footer__subscription">
           <div class="subscription">
-            <p>The good stuff in your inbox</p>
-            <p>News and updates from CH. No spam, we promise.</p>
+            <p class="subscription__lead">The good stuff in your inbox</p>
+            <p class="subscription__text">News and updates from CH. No spam, we promise.</p>
             <div class="subscription__info">
-              <input type="text" id="user-subscribe-email" placeholder="Your E-mail">
-              <label for="user-subscribe-email"></label>
-              <a href="#">Sign up</a>
+              <div class="field">
+                <input type="text" id="user-email-subscription" placeholder="Your E-mail">
+                <label for="user-email-subscription"></label>
+              </div>
+              <a class="link link_with_arrow" href="#">Sign up</a>
             </div>
           </div>
         </div>
         <div class="page-footer__navigation">
-          <nav class="site-navigation">
+          <nav class="site-navigation site-navigation_footer_position">
             <div class="site-navigation__wrapper">
               <ul class="site-navigation__list">
                 <li class="site-navigation__item">
@@ -297,6 +299,8 @@
                 <li class="site-navigation__item">
                   <a>Delivery</a>
                 </li>
+              </ul>
+              <ul class="site-navigation__list">
                 <li class="site-navigation__item">
                   <a>About CH</a>
                 </li>
@@ -318,34 +322,34 @@
             <ul class="social-list">
               <li class="social__item">
                 <a class="social__link social__link_facebook" href="#">
-                  <span>Facebook</span>
-                  <svg class="social__link-icon social__link-icon_fb">
-                    <use></use>
+                  <svg class="social__link-icon social__link-icon_fb" width="15" height="15">
+                    <use xlink:href="img/sprite_auto.svg#icon-facebook"></use>
                   </svg>
+                  <span>Facebook</span>
                 </a>
               </li>
               <li class="social__item">
                 <a class="social__link social__link_instagram" href="#">
-                  <span>Instagram</span>
-                  <svg class="social__link-icon social__link-icon_inst">
-                    <use></use>
+                  <svg class="social__link-icon social__link-icon_inst" width="15" height="15">
+                    <use xlink:href="img/sprite_auto.svg#icon-instagram"></use>
                   </svg>
+                  <span>Instagram</span>
                 </a>
               </li>
               <li class="social__item">
                 <a class="social__link social__link_pinterest" href="#">
-                  <span>Pinterest</span>
-                  <svg class="social__link-icon social__link-icon_pinterest">
-                    <use></use>
+                  <svg class="social__link-icon social__link-icon_pinterest" width="15" height="15">
+                    <use xlink:href="img/sprite_auto.svg#icon-pinterest"></use>
                   </svg>
+                  <span>Pinterest</span>
                 </a>
               </li>
               <li class="social__item">
                 <a class="social__link social__link_twitter" href="#">
-                  <span>Twitter</span>
-                  <svg class="social__link-icon social__link-icon_twitter">
-                    <use></use>
+                  <svg class="social__link-icon social__link-icon_twitter" width="15" height="15">
+                    <use xlink:href="img/sprite_auto.svg#icon-twitter"></use>
                   </svg>
+                  <span>Twitter</span>
                 </a>
               </li>
             </ul>

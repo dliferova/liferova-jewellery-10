@@ -5,9 +5,12 @@
   color: $grey;
   border: none;
   font-size: 14px;
-  border-bottom: 1px solid black;
   background-color: inherit;
   cursor: pointer;
+}
+
+.field_ordinary {
+  border-bottom: 1px solid black;
 }
 
 .field input:focus-visible {

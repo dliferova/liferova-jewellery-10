@@ -1,0 +1,26 @@
+.subscription__info {
+  display: inline-flex;
+  width: 100%;
+  align-items: flex-end;
+  border-bottom: 1px solid white;
+}
+
+.subscription__info .field {
+  width: 72%;
+}
+
+.subscription__lead {
+  @include font-family-cormorant-garamond;
+  font-size: 34px;
+  color: $white;
+  font-weight: bold;
+  line-height: 130%;
+  margin: 0 0 20px;
+}
+
+.subscription__text {
+  font-size: 16px;
+  line-height: 130%;
+  color: $grey;
+  margin: 0 0 50px;
+}

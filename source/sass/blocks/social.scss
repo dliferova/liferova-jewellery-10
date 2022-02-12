@@ -1,0 +1,82 @@
+.social-list {
+  @include resetting-styles-list;
+
+  @media (max-width: $mobile-width-only) {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+}
+
+.social__item {
+  margin: 0 0 30px;
+
+  @media (max-width: $mobile-width-only) {
+    margin: 0;
+  }
+}
+
+.social__link {
+  display: inline-flex;
+  align-items: center;
+}
+
+.social__link svg {
+  margin: 0 20px 0 0;
+  fill: $white;
+
+  @media (max-width: $mobile-width-only) {
+    width: 20px;
+    height: 20px;
+
+    margin: 0 30px 0 0;
+  }
+}
+
+.social__link span {
+  color: $white;
+  font-size: 16px;
+  line-height: 130%;
+
+  @media (max-width: $mobile-width-only) {
+    display: none;
+  }
+}
+
+.social__link span {
+  color: $white;
+  font-size: 16px;
+  line-height: 130%;
+
+  @media (max-width: $mobile-width-only) {
+    display: none;
+  }
+}
+
+.social__link:hover span {
+  color: rgba($white, 0.6);
+}
+
+.social__link:hover .social__link-icon_fb {
+  fill: #325d96;
+  transition: all ease 0.4s;
+  transform: scale(1.2);
+}
+
+.social__link:hover .social__link-icon_inst {
+  fill: #da7ae7;
+  transition: all ease 0.4s;
+  transform: scale(1.2);
+}
+
+.social__link:hover .social__link-icon_pinterest {
+  fill: #d41923;
+  transition: all ease 0.4s;
+  transform: scale(1.2);
+}
+
+.social__link:hover .social__link-icon_twitter {
+  fill: #00b1eb;
+  transition: all ease 0.4s;
+  transform: scale(1.2);
+}

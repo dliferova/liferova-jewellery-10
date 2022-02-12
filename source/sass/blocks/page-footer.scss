@@ -1,0 +1,27 @@
+.page-footer {
+  background-color: black;
+}
+
+.page-footer__wrapper {
+  display: grid;
+  grid-template-columns: 500px max-content min-content;
+  column-gap: 80px;
+  padding: 98px 0;
+
+  @media (max-width: $tablet-width-max) {
+    grid-template-columns: repeat(2, 1fr);
+    padding: 60px 0;
+    row-gap: 50px;
+    column-gap: 0;
+  }
+
+  @media (max-width: $mobile-width-only) {
+    grid-template-columns: 1fr;
+  }
+}
+
+.page-footer__subscription {
+  @media (max-width: $tablet-width-max) {
+    grid-column: 1 / -1;
+  }
+}
