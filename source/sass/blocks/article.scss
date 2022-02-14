@@ -1,0 +1,53 @@
+.article {
+  background-color: $article-background;
+  overflow: hidden;
+}
+
+.article__wrapper {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.article__img-container img {
+  display: block;
+}
+
+.article__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 70px 50px 20px;
+}
+
+.article_large_type .article__wrapper {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 330px 300px;
+}
+
+.article_large_type .article__img-container {
+  grid-column: 1 / 4;
+}
+
+.article_large_type .article__content {
+  background-color: $article-background;
+  grid-row: 2 / 4;
+  grid-column: 2 / 4;
+}
+
+//Стилизация контента карточки
+
+.article__content time {
+  color: #9B9997;
+  font-size: 14px;
+  margin: 0 0 25px;
+}
+
+.article__content h3 {
+  @include font-family-cormorant-garamond;
+  font-size: 26px;
+  line-height: 130%;
+  font-weight: 500;
+  margin: 0 0 50px;
+}

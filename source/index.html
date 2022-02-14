@@ -129,8 +129,10 @@
       <h1 class="visually-hidden">Jewellery - jewellery catalog</h1>
       <section class="products-slider">
         <div class="products-slider__wrapper">
-          <h2>New In</h2>
-          <a href="#">Shop Now</a>
+          <div class="section-lead">
+            <h2>New In</h2>
+            <a href="#" class="section-link">Shop Now</a>
+          </div>
           <div class="products-slider__container">
             <div class="product-card">
               <p class="product-card__title">Necklace with amethyst</p>
@@ -154,38 +156,56 @@
       </section>
 
       <section class="blog">
-        <h2>Blog</h2>
-        <a href="#">Read All</a>
-        <article class="article article_small_type">
-          <div class="article__wrapper">
-            <div class="article__img-container"></div>
-            <div class="article__content">
-              <span class="article__data">September 30, 2019</span>
-              <h3>How to care for your jewellery</h3>
-              <a href="#">Read Article</a>
-            </div>
+        <div class="blog__wrapper">
+          <div class="section-lead">
+            <h2>Blog</h2>
+            <a href="#" class="section-link">Read All</a>
           </div>
-        </article>
-        <article class="article article_small_type">
-          <div class="article__wrapper">
-            <div class="article__img-container"></div>
-            <div class="article__content">
-              <span class="article__data">September 23, 2019</span>
-              <h3>Power of crystals</h3>
-              <a href="#">Read Article</a>
-            </div>
-          </div>
-        </article>
-        <article class="article article_large_type">
-          <div class="article__wrapper">
-            <div class="article__img-container"></div>
-            <div class="article__content">
-              <span class="article__data">September 16, 2019</span>
-              <h3>Aw 19 trends</h3>
-              <a href="#">Read Article</a>
-            </div>
-          </div>
-        </article>
+          <ul class="blog__list">
+            <li class="blog__item blog__item_theme_jewellery-care">
+              <article class="article article_small_type">
+                <div class="article__wrapper">
+                  <div class="article__img-container">
+                    <img src="img/jess-harper-sunday-blog-care-desktop.jpg" width="285" height="300">
+                  </div>
+                  <div class="article__content">
+                    <time datetime="2019-09-30">September 30, 2019</time>
+                    <h3>How to care for your jewellery</h3>
+                    <a href="#" class="section-link">Read Article</a>
+                  </div>
+                </div>
+              </article>
+            </li>
+            <li class="blog__item blog__item_theme_power-of-crystals">
+              <article class="article article_small_type">
+                <div class="article__wrapper">
+                  <div class="article__img-container">
+                    <img src="img/alex-holyoake-blog-power-desktop.jpg" width="285" height="300">
+                  </div>
+                  <div class="article__content">
+                    <time datetime="2019-09-23">September 23, 2019</time>
+                    <h3>Power of crystals</h3>
+                    <a href="#" class="section-link">Read Article</a>
+                  </div>
+                </div>
+              </article>
+            </li>
+            <li class="blog__item blog__item_theme_aw-19-trends">
+              <article class="article article_large_type">
+                <div class="article__wrapper">
+                  <div class="article__img-container">
+                    <img src="img/alve-odonnell-blog-trends-desktop.jpg" width="570" height="630">
+                  </div>
+                  <div class="article__content">
+                    <time datetime="2019-09-16">September 16, 2019</time>
+                    <h3>Aw 19 trends</h3>
+                    <a href="#" class="section-link">Read Article</a>
+                  </div>
+                </div>
+              </article>
+            </li>
+          </ul>
+        </div>
       </section>
 
       <section class="faq">

@@ -5,6 +5,8 @@
 @import "global/variables.scss";
 
 //Blocks
+@import "blocks/article.scss";
+@import "blocks/blog.scss";
 @import "blocks/cart.scss";
 @import "blocks/catalog-navigation.scss";
 @import "blocks/link.scss";
@@ -18,8 +20,10 @@
 @import "blocks/page-container.scss";
 @import "blocks/page-footer.scss";
 @import "blocks/page-header.scss";
+@import "blocks/products-slider.scss";
 @import "blocks/promo-section.scss";
 @import "blocks/search-bar.scss";
 @import "blocks/site-navigation.scss";
+@import "blocks/section-link.scss";
 @import "blocks/social.scss";
 @import "blocks/subscription.scss";

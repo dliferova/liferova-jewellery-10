@@ -15,6 +15,14 @@
   position: relative;
 }
 
+.page__body h2 {
+  @include font-family-cormorant-garamond;
+  font-size: 34px;
+  line-height: 130%;
+  text-align: center;
+  margin: 0;
+}
+
 .page__login {
   padding: 80px 0;
 }
