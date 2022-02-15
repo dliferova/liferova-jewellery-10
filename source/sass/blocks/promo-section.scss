@@ -1,12 +1,41 @@
 .promo-section__container {
-  background-image: linear-gradient(rgba($gradient, 0.7), rgba($gradient, 0.7)), url("../img/main-promo-photo.jpg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: auto 100%;
-  min-height: 463px;
   display: flex;
   justify-content: center;
   align-items: center;
+
+  width: 100%;
+  min-height: 463px;
+  background-color: $brown-ordinary;
+  background-image: linear-gradient(rgba($gradient, 0.7), rgba($gradient, 0.7)),
+  url("../img/main-promo-photo.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  @media (min-resolution: 2dppx) {
+    background-image: linear-gradient(rgba($gradient, 0.7), rgba($gradient, 0.7)),
+    url("../img/main-promo-photo@2x.jpg");
+  }
+
+  @media (max-width: $tablet-width-max) {
+    background-image: linear-gradient(rgba($gradient, 0.7), rgba($gradient, 0.7)),
+    url("../img/main-promo-tablet.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: linear-gradient(rgba($gradient, 0.7), rgba($gradient, 0.7)),
+      url("../img/main-promo-tablet@2x.jpg");
+    }
+  }
+
+  @media (max-width: $mobile-width-only) {
+    background-image: linear-gradient(rgba($gradient, 0.7), rgba($gradient, 0.7)),
+    url("../img/main-promo-mobile.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: linear-gradient(rgba($gradient, 0.7), rgba($gradient, 0.7)),
+      url("../img/main-promo-mobile@2x.jpg");
+    }
+  }
 }
 
 .promo-section__slogan p {
