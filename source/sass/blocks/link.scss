@@ -14,29 +14,6 @@
   color: $text-black;
 }
 
-.link_with_arrow {
-  padding: 10px 10px;
-  display: inline-flex;
-  align-items: center;
-}
-
-.link_with_arrow:hover {
-  transition: all ease 0.6s;
-  transform: scale(1.2);
-}
-
-.link_with_arrow:after {
-  content: "";
-  width: 29px;
-  height: 9px;
-  background-image: url("../img/icons/arrow-ordinary.svg");
-  background-repeat: no-repeat;
-  background-position: center;
-  position: absolute;
-  left: 80%;
-  margin: 0 0 0 20px;
-}
-
 .link_ordinary:hover {
   color: $grey;
 }

@@ -20,6 +20,8 @@
 }
 
 .site-navigation__item:last-child {
+  margin: 0;
+
   @media (max-width: $mobile-width-only) {
     margin: 0;
   }
@@ -35,6 +37,14 @@
   display: grid;
   grid-template-columns: repeat(2, max-content);
   column-gap: 67px;
+
+  @media (max-width: 1115px) {
+    column-gap: 10%;
+  }
+
+  @media (max-width: $tablet-width-max) {
+    column-gap: 87px;
+  }
 
   @media (max-width: $mobile-width-only) {
     grid-template-columns: 1fr;

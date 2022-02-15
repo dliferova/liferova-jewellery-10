@@ -16,6 +16,10 @@
   }
 }
 
+.social__item:last-child {
+  margin: 0;
+}
+
 .social__link {
   display: inline-flex;
   align-items: center;
