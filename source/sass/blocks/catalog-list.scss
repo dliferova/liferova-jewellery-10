@@ -1,0 +1,12 @@
+.catalog-list {
+  @include resetting-styles-list;
+}
+
+.catalog-list__item {
+  display: block;
+  margin: 0 30px 0 0;
+}
+
+.catalog-list__item:last-child {
+  margin: 0;
+}

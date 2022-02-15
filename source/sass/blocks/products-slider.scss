@@ -1,0 +1,59 @@
+.products-slider__container {
+  position: relative;
+}
+
+.products-slider__list {
+  @include resetting-styles-list;
+  display: flex;
+  flex-direction: row;
+  margin: 0 0 40px;
+
+  @media (max-width: 1280px) {
+    justify-content: center;
+  }
+}
+
+.products-slider__pagination-list {
+  @include resetting-styles-list;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+}
+
+.products-slider__pagination-button {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  display: block;
+}
+
+.products-slider__pagination-button span {
+  @include font-family-poppins;
+  color: #9B9997;
+  font-size: 16px;
+}
+
+.products-slider__pagination-button_active span {
+  color: $text-black;
+}
+
+.products-slider__control-buttons {
+  @include resetting-styles-list;
+  width: 100%;
+  position: absolute;
+  top: -95px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.products-slider__btn {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.products-slider__btn_left svg {
+  transform: rotate(180deg);
+}
+
