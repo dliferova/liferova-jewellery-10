@@ -16,6 +16,10 @@
   font-weight: bold;
   line-height: 130%;
   margin: 0 0 20px;
+
+  @media (max-width: $mobile-width-only) {
+    max-width: 213px;
+  }
 }
 
 .subscription__text {
@@ -23,4 +27,8 @@
   line-height: 130%;
   color: $grey;
   margin: 0 0 50px;
+
+  @media (max-width: $mobile-width-only) {
+    max-width: 226px;
+  }
 }

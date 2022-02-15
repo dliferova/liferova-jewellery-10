@@ -38,7 +38,7 @@
   }
 
   @media (max-width: $mobile-width-only) {
-    padding: 66px 51px 40px;
+    padding: 49px 0 40px;
   }
 }
 
@@ -78,4 +78,8 @@
   line-height: 130%;
   font-weight: 500;
   margin: 0 0 50px;
+
+  @media (max-width: $mobile-width-only) {
+    max-width: 160px;
+  }
 }
