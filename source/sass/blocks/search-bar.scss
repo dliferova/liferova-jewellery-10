@@ -36,6 +36,10 @@
     left: 52px;
     z-index: 4;
   }
+
+  @media (max-width: $mobile-width-only) {
+    left: 27px;
+  }
 }
 
 .search-bar__button::before {
@@ -43,10 +47,16 @@
   width: 14px;
   height: 14px;
   background: url("../img/icons/loupe.svg");
+  background-repeat: no-repeat;
   position: absolute;
   top: 0;
   left: 50%;
   transform: translateX(-50%);
+
+  @media (max-width: $mobile-width-only) {
+    width: 16px;
+    height: 16px;
+  }
 }
 
 .search-bar__input::placeholder {

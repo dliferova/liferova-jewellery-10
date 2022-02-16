@@ -10,6 +10,10 @@
     padding: 0;
     margin: 0 0 55px;
   }
+
+  @media (max-width: $mobile-width-only) {
+    margin: 0 0 34px;
+  }
 }
 
 .catalog-navigation__list {
@@ -29,7 +33,7 @@
   margin: 0 0 0 34px;
 
   @media (max-width: $tablet-width-max) {
-    margin: 0 0 40px;
+    margin: 0 0 33px;
   }
 }
 
