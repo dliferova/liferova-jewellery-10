@@ -2,6 +2,10 @@
   width: 75.6%;
   margin: 0 auto;
   overflow: hidden;
+
+  @media (max-width: $mobile-width-only) {
+    width: 100%;
+  }
 }
 
 .faq__item {
@@ -21,6 +25,10 @@
   min-height: 112px;
   box-sizing: border-box;
   padding: 44px 50px 44px 38px;
+
+  @media (max-width: $mobile-width-only) {
+    padding: 22px 15px;
+  }
 }
 
 .faq__question {
@@ -72,6 +80,10 @@
   height: auto;
   z-index: 1;
   opacity: 1;
+
+  @media (max-width: $mobile-width-only) {
+    width: 205px;
+  }
 }
 
 .faq__answer p {
