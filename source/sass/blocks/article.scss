@@ -14,11 +14,11 @@
 
 .article__img-container img {
   display: block;
+  object-fit: cover;
 
   @media (max-width: $tablet-width-max) {
     width: 100%;
     height: 300px;
-    object-fit: cover;
   }
 
   @media (max-width: $mobile-width-only) {
@@ -32,6 +32,10 @@
   align-items: center;
   text-align: center;
   padding: 70px 50px 20px;
+
+  @media (max-width: 1200px) {
+    padding: 70px 8% 20px;
+  }
 
   @media (max-width: $tablet-width-max) {
     padding: 70px 83px 40px;
