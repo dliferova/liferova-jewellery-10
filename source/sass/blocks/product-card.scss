@@ -10,6 +10,11 @@
   font-size: 16px;
   line-height: 130%;
   font-weight: 500;
+
+  @media (max-width: $mobile-width-only) {
+    max-width: 130px;
+    text-align: center;
+  }
 }
 
 .product-card__price {
@@ -27,5 +32,15 @@
   @media (max-width: 1280px) {
     height: 214px;
     width: 210px;
+  }
+
+  @media (max-width: $tablet-width-max) {
+    width: 324px;
+    height: 340px;
+  }
+
+  @media (max-width: $mobile-width-only) {
+    width: 130px;
+    height: 136px;
   }
 }
