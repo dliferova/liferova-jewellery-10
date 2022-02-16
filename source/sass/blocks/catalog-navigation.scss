@@ -3,7 +3,8 @@
   margin: 0 auto;
 
   @media (min-width: $desktop-width-min) {
-    max-width: 495px;
+    max-width: 571px;
+    padding: 0 0 0 45px;
   }
 
   @media (max-width: $tablet-width-max) {
@@ -30,7 +31,7 @@
 }
 
 .catalog-navigation__list li {
-  margin: 0 0 0 34px;
+  margin: 0 35px 0 0;
 
   @media (max-width: $tablet-width-max) {
     margin: 0 0 33px;

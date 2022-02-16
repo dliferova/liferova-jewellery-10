@@ -16,8 +16,10 @@
 }
 
 .blog__item_theme_power-of-crystals .article__content {
-  @media (min-width: $tablet-width-min) and (max-width: $tablet-width-max) {
-    order: -1;
+  order: -1;
+
+  @media (max-width: $mobile-width-only) {
+    order: 0;
   }
 }
 
