@@ -40,3 +40,40 @@ if (filterPopupElement) {
     filterPopupElement.classList.remove('filter__popup_opened');
   })
 }
+
+//FAQ accordeon realisation
+const accordion = document.querySelector('.faq__list')
+const accordionItems = accordion.querySelectorAll('.faq__item')
+
+const accordionItemsGroup = {}
+let openedItem = null;
+
+const toggleItem = (element) => {
+  const button = element.querySelector('.faq__question');
+  const answer = element.querySelector('.faq__answer');
+  button.classList.toggle('faq__active-btn');
+  answer.classList.toggle('faq__answer_show');
+}
+
+const onItemClick = (item) => {
+  if (openedItem && openedItem === item.id) {
+    toggleItem(item)
+    openedItem = null;
+  } else if (openedItem && openedItem !== item.id) {
+    toggleItem(accordionItemsGroup[openedItem])
+    toggleItem(item)
+    openedItem = item.id
+  } else {
+    toggleItem(item)
+    openedItem = item.id
+  }
+}
+
+accordionItems.forEach(item => {
+  accordionItemsGroup[item.id] = item;
+  toggleItem(item)
+  item.addEventListener('click', (evt) => {
+    console.log(evt)
+    onItemClick(item)
+  })
+})
