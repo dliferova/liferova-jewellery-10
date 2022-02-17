@@ -165,3 +165,30 @@
   background-color: transparent;
   outline: 1px solid $brown-ordinary;
 }
+
+//Чекбоксы
+
+.filter__pseudo-check-input {
+  display: block;
+  width: 15px;
+  height: 15px;
+  background-color: $white;
+  border: 1px solid $brown-ordinary;
+  position: relative;
+  margin: 0 14px 0 0;
+}
+
+.filter__label-check {
+  display: flex;
+  align-items: center;
+}
+
+.filter__input-checkbox:checked + .filter__label-check > .filter__pseudo-check-input {
+  &::before {
+    position: absolute;
+    content: "";
+    width: 15px;
+    height: 15px;
+    background-color: $brown-ordinary;
+  }
+}
