@@ -138,6 +138,7 @@
           <form class="filter" method="get" action="https://echo.htmlacademy.ru">
             <fieldset>
               <legend>Product</legend>
+              <button class="filter__button filter__button_active" type="button" aria-label="open or close"></button>
               <ul>
                 <li class="filter-checkbox">
                   <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="necklaces" id="filter-necklaces" checked="">
@@ -159,6 +160,7 @@
             </fieldset>
             <fieldset>
               <legend>Material</legend>
+              <button class="filter__button" type="button" aria-label="open or close"></button>
               <ul>
                 <li class="filter-checkbox">
                   <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="material-gold" id="filter-material-gold" checked="">
@@ -172,6 +174,7 @@
             </fieldset>
             <fieldset>
               <legend>Collection</legend>
+              <button class="filter__button" type="button" aria-label="open or close"></button>
               <ul>
                 <li class="filter-checkbox">
                   <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="collection-pink-flamingo" id="filter-collection-pink-flamingo" checked="">
@@ -185,9 +188,32 @@
             </fieldset>
             <fieldset>
               <legend>Price</legend>
+
+              <button class="filter__button filter__button_active" type="button" aria-label="open or close"></button>
+
+              <div class="filter__range">
+                <div class="filter__range-controls">
+                  <div class="filter__scale">
+                    <div class="filter__bar"></div>
+                  </div>
+                  <div class="filter__toggle filter__toggle_min" tabindex="0"></div>
+                  <div class="filter__toggle filter__toggle_max" tabindex="0"></div>
+                  <div class="filter__price-range">
+                    <label>$
+                      <input class="" type="number" name="min-price" value="55">
+                    </label>
+                    <label>$
+                      <input type="number" name="max" value="155">
+                    </label>
+                  </div>
+                </div>
+              </div>
+
             </fieldset>
-            <button type="submit" class="filter-button button">Apply</button>
-            <button type="button" class="filter-button_transparent button">Clear all</button>
+            <div class="filter__control-buttons">
+              <button type="submit" class="filter-button filter-button_decorated">Apply</button>
+              <button type="reset" class="filter-button filter-button_transparent">Clear all</button>
+            </div>
           </form>
         </div>
         <ul class="catalog__list catalog-list">

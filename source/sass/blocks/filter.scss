@@ -1,0 +1,167 @@
+.filter fieldset {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  position: relative;
+}
+
+.filter fieldset:last-of-type {
+  margin: 0 0 35px;
+}
+
+.filter legend {
+  width: 100%;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 130%;
+  padding: 23px 28px;
+  border: 1px solid $brown-ordinary;
+  border-bottom: none;
+}
+
+.filter ul {
+  @include resetting-styles-list;
+  padding: 0 35px 16px;
+  border: 1px solid $brown-ordinary;
+  border-top: none;
+  border-bottom: none;
+}
+
+.filter button {
+  cursor: pointer;
+  border: none;
+}
+
+.filter__button {
+  border: none;
+  position: absolute;
+  background-color: transparent;
+  width: 100%;
+  height: 67px;
+  top: -66px;
+}
+
+.filter__button::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 36px;
+  transform: translateY(-50%);
+  width: 15px;
+  height: 8px;
+  font-weight: 500;
+  background-image: url("../img/icons/arrow-down.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  transition: background-color 0.3s ease-out;
+}
+
+.filter .filter__button_active::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 36px;
+  transform: translateY(-50%);
+  width: 15px;
+  height: 19px;
+  background-image: url("../img/icons/arrow-up.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+//Price range
+
+.filter__range {
+  border: 1px solid $brown-ordinary;;
+  border-top: none;
+}
+
+.filter__range-controls {
+  position: relative;
+  width: 80%;
+  margin: 0 auto;
+  height: 34px;
+  padding: 0 0 60px 0;
+}
+
+.filter__scale {
+  position: absolute;
+  height: 2px;
+  width: 100%;
+  background-color: #F0EAE4;
+  top: 7px;
+}
+
+.filter__bar {
+  position: absolute;
+  height: 1px;
+  width: 45%;
+  background-color: $brown-ordinary;
+  left: 30%;
+}
+
+.filter__toggle {
+  position: absolute;
+  top: 0;
+  width: 14px;
+  height: 14px;
+  padding: 0;
+  border: 8px solid $brown-ordinary;
+  border-radius: 50%;
+  cursor: pointer;
+  transform: translateX(-50%);
+}
+
+.filter__toggle_max {
+  left: 77%;
+}
+
+.filter__toggle_min {
+  left: 27%;
+}
+
+.filter__price-range label {
+  display: flex;
+  position: absolute;
+  align-items: baseline;
+  left: 21%;
+  top: 33%;
+}
+
+.filter__price-range label:last-of-type {
+  left: 68%;
+}
+
+.filter__price-range input {
+  @include font-family-poppins;
+  border: none;
+  font-size: 14px;
+  line-height: 130%;
+  font-weight: 500;
+  color: $text-black;
+  width: 100%;
+}
+
+.filter-button {
+  @include font-family-poppins;
+  width: 100%;
+  display: inline-flex;
+  justify-content: center;
+  font-size: 16px;
+  padding: 24px 10px;
+  margin: 0 0 25px;
+}
+
+.filter-button:last-child {
+  margin: 0;
+}
+
+.filter-button_decorated {
+  background-color: $brown-ordinary;
+  color: $white;
+}
+
+.filter-button_transparent {
+  background-color: transparent;
+  outline: 1px solid $brown-ordinary;
+}
