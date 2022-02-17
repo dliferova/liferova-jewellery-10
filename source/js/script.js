@@ -29,12 +29,14 @@ const filterControlButton = document.querySelector('.filter__control-button-wrap
 const filterPopupElement = document.querySelector('.filter__popup');
 const filterPopupCloseButton = document.querySelector('.filter__popup-close-button');
 
-filterPopupElement.classList.remove('filter__popup_nojs');
+if (filterPopupElement) {
+  filterPopupElement.classList.remove('filter__popup_nojs');
 
-filterControlButton.addEventListener('click', () => {
-  filterPopupElement.classList.add('filter__popup_opened');
-});
+  filterControlButton.addEventListener('click', () => {
+    filterPopupElement.classList.add('filter__popup_opened');
+  });
 
-filterPopupCloseButton.addEventListener('click', () => {
-  filterPopupElement.classList.remove('filter__popup_opened');
-})
+  filterPopupCloseButton.addEventListener('click', () => {
+    filterPopupElement.classList.remove('filter__popup_opened');
+  })
+}
