@@ -12,27 +12,3 @@
     color: rgba($text-black, 0.6);
   }
 }
-
-.section-lead {
-  margin: 0 auto 60px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-
-  @media (max-width: $mobile-width-only) {
-    margin: 0 auto 50px;
-  }
-}
-
-.section-lead h2 {
-  margin: 0 0 23px;
-  letter-spacing: 0.6px;
-
-  @media (max-width: $mobile-width-only) {
-    margin: 0 0 19px;
-  }
-}
-
-.section-lead_no-decorated {
-  margin: 0;
-}

@@ -57,3 +57,18 @@
     font-weight: 500;
   }
 }
+
+.catalog-navigation__control-buttons {
+  @include resetting-styles-list;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  position: absolute;
+}
+
+.catalog-navigation__btn {
+  border: none;
+  background-color: transparent;
+  font-size: 16px;
+  line-height: 130%;
+}

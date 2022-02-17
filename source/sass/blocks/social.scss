@@ -1,4 +1,4 @@
-.social-list {
+.social__list {
   @include resetting-styles-list;
 
   @media (max-width: $mobile-width-only) {

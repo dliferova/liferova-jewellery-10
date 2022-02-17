@@ -1,0 +1,23 @@
+.filter-button {
+  @include font-family-poppins;
+  width: 100%;
+  display: inline-flex;
+  justify-content: center;
+  font-size: 16px;
+  padding: 24px 10px;
+  margin: 0 0 25px;
+}
+
+.filter-button:last-child {
+  margin: 0;
+}
+
+.filter-button_decorated {
+  background-color: $brown-ordinary;
+  color: $white;
+}
+
+.filter-button_transparent {
+  background-color: transparent;
+  outline: 1px solid $brown-ordinary;
+}
