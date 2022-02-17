@@ -6,6 +6,10 @@
   font-size: 16px;
   padding: 24px 10px;
   margin: 0 0 25px;
+
+  @media (max-width: $tablet-width-max) {
+    padding: 21px 10px;
+  }
 }
 
 .filter-button:last-child {

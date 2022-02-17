@@ -4,4 +4,8 @@
   grid-template-columns: repeat(3, 1fr);
   position: relative;
   grid-gap: 30px;
+
+  @media (max-width: $mobile-width-only) {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }

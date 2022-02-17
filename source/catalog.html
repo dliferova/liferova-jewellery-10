@@ -133,139 +133,156 @@
     <section class="catalog">
       <div class="catalog__wrapper">
 
-        <div class="catalog__filters filters">
+        <div class="catalog__filters filter">
           <h2 class="visually-hidden">Jewellery products catalog</h2>
-          <form class="filter" method="get" action="https://echo.htmlacademy.ru">
-            <fieldset>
-              <legend>Product</legend>
-              <button class="filter__button filter__button_active" type="button" aria-label="open or close"></button>
-              <ul>
-                <li class="filter-checkbox">
-                  <input class="visually-hidden filter__input filter__input-checkbox"
-                         type="checkbox"
-                         name="necklaces"
-                         id="filter-necklaces"
-                         checked>
-                  <label class="filter__label-check" for="filter-necklaces">
-                    <span class="filter__pseudo-check-input"></span>
-                    Necklaces
-                  </label>
-                </li>
-                <li class="filter-checkbox">
-                  <input class="visually-hidden filter__input filter__input-checkbox"
-                         type="checkbox"
-                         name="chokers"
-                         id="filter-chokers"
-                         checked>
-                  <label class="filter__label-check" for="filter-chokers">
-                    <span class="filter__pseudo-check-input"></span>
-                    Chokers
-                  </label>
-                </li>
-                <li class="filter-checkbox">
-                  <input class="visually-hidden filter__input filter__input-checkbox"
-                         type="checkbox"
-                         name="rings"
-                         id="filter-rings">
-                  <label class="filter__label-check" for="filter-rings">
-                    <span class="filter__pseudo-check-input"></span>
-                    Rings
-                  </label>
-                </li>
-                <li class="filter-checkbox">
-                  <input class="visually-hidden filter__input filter__input-checkbox"
-                         type="checkbox"
-                         name="earrings"
-                         id="filter-earrings"
-                         checked>
-                  <label class="filter__label-check" for="filter-earrings">
-                    <span class="filter__pseudo-check-input"></span>
-                    Earrings
-                  </label>
-                </li>
-              </ul>
-            </fieldset>
-            <fieldset>
-              <legend>Material</legend>
-              <button class="filter__button" type="button" aria-label="open or close"></button>
-              <ul>
-                <li class="filter-checkbox">
-                  <input class="visually-hidden filter__input filter__input-checkbox"
-                         type="checkbox"
-                         name="material-gold"
-                         id="filter-material-gold">
-                  <label class="filter__label-check" for="filter-material-gold">
-                    <span class="filter__pseudo-check-input"></span>
-                    Gold
-                  </label>
-                </li>
-                <li class="filter-checkbox">
-                  <input class="visually-hidden filter__input filter__input-checkbox"
-                         type="checkbox"
-                         name="material-silver"
-                         id="filter-material-silver">
-                  <label class="filter__label-check" for="filter-material-silver">
-                    <span class="filter__pseudo-check-input"></span>
-                    Silver
-                  </label>
-                </li>
-              </ul>
-            </fieldset>
-            <fieldset>
-              <legend>Collection</legend>
-              <button class="filter__button" type="button" aria-label="open or close"></button>
-              <ul>
-                <li class="filter-checkbox">
-                  <input class="visually-hidden filter__input filter__input-checkbox"
-                         type="checkbox"
-                         name="collection-pink-flamingo"
-                         id="filter-collection-pink-flamingo">
-                  <label class="filter__label-check" for="filter-collection-pink-flamingo">
-                    <span class="filter__pseudo-check-input"></span>
-                    Pink flamingo
-                  </label>
-                </li>
-                <li class="filter-checkbox">
-                  <input class="visually-hidden filter__input filter__input-checkbox"
-                         type="checkbox"
-                         name="collection-dreams"
-                         id="filter-collection-dreams">
-                  <label class="filter__label-check" for="filter-collection-dreams">
-                    <span class="filter__pseudo-check-input"></span>
-                    Dreams
-                  </label>
-                </li>
-              </ul>
-            </fieldset>
-            <fieldset>
-              <legend>Price</legend>
 
-              <button class="filter__button filter__button_active" type="button" aria-label="open or close"></button>
+          <div class="filter__popup filter__popup_nojs">
 
-              <div class="filter__range">
-                <div class="filter__range-controls">
-                  <div class="filter__scale">
-                    <div class="filter__bar"></div>
-                  </div>
-                  <div class="filter__toggle filter__toggle_min" tabindex="0"></div>
-                  <div class="filter__toggle filter__toggle_max" tabindex="0"></div>
-                  <div class="filter__price-range">
-                    <label>$
-                      <input class="" type="number" name="min-price" value="55">
+            <div class="filter__control-button-wrapper">
+              <button class="filter-button filter-button_decorated" type="button">
+                <span>Filter</span>
+              </button>
+            </div>
+
+            <form class="filter__form" method="get" action="https://echo.htmlacademy.ru">
+              <fieldset>
+                <legend>Product</legend>
+                <button class="filter__button filter__button_active" type="button" aria-label="open or close"></button>
+                <ul>
+                  <li class="filter-checkbox">
+                    <input class="visually-hidden filter__input filter__input-checkbox"
+                           type="checkbox"
+                           name="necklaces"
+                           id="filter-necklaces"
+                           checked>
+                    <label class="filter__label-check" for="filter-necklaces">
+                      <span class="filter__pseudo-check-input"></span>
+                      Necklaces
                     </label>
-                    <label>$
-                      <input type="number" name="max" value="155">
+                  </li>
+                  <li class="filter-checkbox">
+                    <input class="visually-hidden filter__input filter__input-checkbox"
+                           type="checkbox"
+                           name="chokers"
+                           id="filter-chokers"
+                           checked>
+                    <label class="filter__label-check" for="filter-chokers">
+                      <span class="filter__pseudo-check-input"></span>
+                      Chokers
                     </label>
+                  </li>
+                  <li class="filter-checkbox">
+                    <input class="visually-hidden filter__input filter__input-checkbox"
+                           type="checkbox"
+                           name="rings"
+                           id="filter-rings">
+                    <label class="filter__label-check" for="filter-rings">
+                      <span class="filter__pseudo-check-input"></span>
+                      Rings
+                    </label>
+                  </li>
+                  <li class="filter-checkbox">
+                    <input class="visually-hidden filter__input filter__input-checkbox"
+                           type="checkbox"
+                           name="earrings"
+                           id="filter-earrings"
+                           checked>
+                    <label class="filter__label-check" for="filter-earrings">
+                      <span class="filter__pseudo-check-input"></span>
+                      Earrings
+                    </label>
+                  </li>
+                </ul>
+              </fieldset>
+              <fieldset>
+                <legend>Material</legend>
+                <button class="filter__button" type="button" aria-label="open or close"></button>
+                <ul>
+                  <li class="filter-checkbox">
+                    <input class="visually-hidden filter__input filter__input-checkbox"
+                           type="checkbox"
+                           name="material-gold"
+                           id="filter-material-gold">
+                    <label class="filter__label-check" for="filter-material-gold">
+                      <span class="filter__pseudo-check-input"></span>
+                      Gold
+                    </label>
+                  </li>
+                  <li class="filter-checkbox">
+                    <input class="visually-hidden filter__input filter__input-checkbox"
+                           type="checkbox"
+                           name="material-silver"
+                           id="filter-material-silver">
+                    <label class="filter__label-check" for="filter-material-silver">
+                      <span class="filter__pseudo-check-input"></span>
+                      Silver
+                    </label>
+                  </li>
+                </ul>
+              </fieldset>
+              <fieldset>
+                <legend>Collection</legend>
+                <button class="filter__button" type="button" aria-label="open or close"></button>
+                <ul>
+                  <li class="filter-checkbox">
+                    <input class="visually-hidden filter__input filter__input-checkbox"
+                           type="checkbox"
+                           name="collection-pink-flamingo"
+                           id="filter-collection-pink-flamingo">
+                    <label class="filter__label-check" for="filter-collection-pink-flamingo">
+                      <span class="filter__pseudo-check-input"></span>
+                      Pink flamingo
+                    </label>
+                  </li>
+                  <li class="filter-checkbox">
+                    <input class="visually-hidden filter__input filter__input-checkbox"
+                           type="checkbox"
+                           name="collection-dreams"
+                           id="filter-collection-dreams">
+                    <label class="filter__label-check" for="filter-collection-dreams">
+                      <span class="filter__pseudo-check-input"></span>
+                      Dreams
+                    </label>
+                  </li>
+                </ul>
+              </fieldset>
+              <fieldset>
+                <legend>Price</legend>
+
+                <button class="filter__button filter__button_active" type="button" aria-label="open or close"></button>
+
+                <div class="filter__range">
+                  <div class="filter__range-controls">
+                    <div class="filter__scale">
+                      <div class="filter__bar"></div>
+                    </div>
+                    <div class="filter__toggle filter__toggle_min" tabindex="0"></div>
+                    <div class="filter__toggle filter__toggle_max" tabindex="0"></div>
+                    <div class="filter__price-range">
+                      <label>$
+                        <input class="" type="number" name="min-price" value="55">
+                      </label>
+                      <label>$
+                        <input type="number" name="max" value="155">
+                      </label>
+                    </div>
                   </div>
                 </div>
-              </div>
 
-            </fieldset>
-            <div class="filter__control-buttons">
-              <button type="submit" class="filter-button filter-button_decorated">Apply</button>
-              <button type="reset" class="filter-button filter-button_transparent">Clear all</button>
-            </div>
-          </form>
+              </fieldset>
+              <div class="filter__control-buttons">
+                <button type="submit" class="filter-button filter-button_decorated">Apply</button>
+                <button type="reset" class="filter-button filter-button_transparent">Clear all</button>
+              </div>
+            </form>
+
+            <button class="filter__popup-close-button" type="button">
+              <span class="visually-hidden">Close filter</span>
+              <svg width="32" height="32">
+                <use xlink:href="img/sprite_auto.svg#icon-close-black"></use>
+              </svg>
+            </button>
+          </div>
         </div>
         <ul class="catalog__list catalog-list">
           <li class="catalog-list__item product-card">
