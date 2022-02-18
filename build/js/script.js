@@ -30,6 +30,7 @@ const filterPopupElement = document.querySelector('.filter__popup');
 const filterPopupCloseButton = document.querySelector('.filter__popup-close-button');
 
 if (filterPopupElement) {
+  filterElement.classList.remove('filter_nojs');
   filterPopupElement.classList.remove('filter__popup_nojs');
 
   filterControlButton.addEventListener('click', () => {
