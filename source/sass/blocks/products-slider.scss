@@ -31,7 +31,7 @@
 
 .products-slider__pagination-button span {
   @include font-family-poppins;
-  color: #9B9997;
+  color: $grey;
   font-size: 16px;
 }
 

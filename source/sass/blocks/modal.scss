@@ -5,7 +5,7 @@
   background-image: url("../img/sweet-ice-cream-photography.jpg");
   background-repeat: no-repeat;
   background-size: 100% 138px;
-  background-color: #F0EAE4;
+  background-color: $article-background;
   padding: 180px 0 60px;
   position: relative;
 }
@@ -46,7 +46,7 @@
   justify-content: center;
   padding: 24px 0;
   border: none;
-  background-color: #A87B62;
+  background-color: $brown-ordinary;
   color: $white;
   font-size: 16px;
   line-height: 130%;
