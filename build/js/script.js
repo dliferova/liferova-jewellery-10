@@ -41,7 +41,7 @@ if (filterPopupElement) {
   })
 }
 
-//Реализация аккордеона
+//FAQ accordeon realisation
 const accordion = document.querySelector('.faq__list')
 const accordionItems = accordion.querySelectorAll('.faq__item')
 
@@ -54,13 +54,6 @@ const toggleItem = (element) => {
   button.classList.toggle('faq__active-btn');
   answer.classList.toggle('faq__answer_show');
 }
-
-// const closeItem = (element) => {
-//   const button = element.querySelector('.faq__question');
-//   const answer = element.querySelector('.faq__answer');
-//   button.classList.toggle('faq__active-btn');
-//   answer.classList.toggle('faq__answer_show');
-// }
 
 const onItemClick = (item) => {
   if (openedItem && openedItem === item.id) {
@@ -78,17 +71,9 @@ const onItemClick = (item) => {
 
 accordionItems.forEach(item => {
   accordionItemsGroup[item.id] = item;
-  // item.classList.remove('accordion-item_nojs');
-  // item.classList.add('accordion-item_closed');
   toggleItem(item)
   item.addEventListener('click', (evt) => {
     console.log(evt)
     onItemClick(item)
-    // const contentElement = item.querySelector('.faq__item-wrapper')
-    // // если кликнули не на контентную область элемента аккордеона
-    // if (evt.composedPath().find(el => el === contentElement) === undefined) {
-    //   console.log(evt)
-    //   onItemClick(item)
-    // }
   })
 })

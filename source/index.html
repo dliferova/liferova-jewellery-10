@@ -393,26 +393,34 @@
 
     <section class="modal visually-hidden">
       <div class="modal__wrapper">
-        <button type="button"><span class="visually-hidden">Close</span></button>
-        <h2>Login</h2>
+        <button type="button" class="modal__close-button" aria-label="close login window">
+          <svg class="menu-toggle__icon-menu" width="14" height="14">
+            <use xlink:href="img/sprite_auto.svg#icon-cross"></use>
+          </svg>
+        </button>
         <div class="modal__login">
-          <form class="modal__form">
+          <h2>Log In</h2>
+          <form class="modal__form" method="post" action="https://echo.htmlacademy.ru/">
             <ul class="modal__form-list">
               <li class="modal__list-item">
-                <input type="text" id="user-email" placeholder="Your E-mail">
-                <label for="user-email"></label>
+                <div class="field field_ordinary">
+                  <input type="text" id="user-email" placeholder="Your E-mail">
+                  <label for="user-email"></label>
+                </div>
               </li>
               <li class="modal__list-item">
-                <input type="text" id="user-password" placeholder="Password">
-                <label for="user-password"></label>
-                <button type="button">Forgot your password</button>
+                <div class="field field_ordinary">
+                  <input type="text" id="user-password" placeholder="Password">
+                  <label for="user-password"></label>
+                </div>
+                <a class="link link_theme_grey" href="#">Forgot your password?</a>
               </li>
             </ul>
-            <button type="submit"><span>Log In</span></button>
+            <button class="modal__button" type="submit"><span>Log In</span></button>
           </form>
           <div class="modal__register">
             <p>Don’t have an account?</p>
-            <a href="#">Sign up</a>
+            <a class="link link_ordinary" href="#">Sign up</a>
           </div>
         </div>
       </div>

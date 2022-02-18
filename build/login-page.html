@@ -3,17 +3,21 @@
 <head>
   <meta charset="UTF-8">
   <meta name="description" content="Jewellery - jewellery catalog.">
-  <link rel="preload" href="fonts/cormorant-garamond-bold.woff2" as="font" type="font/woff2" crossorigin="">
-  <link rel="preload" href="fonts/cormorant-garamond-semibold.woff2" as="font" type="font/woff2" crossorigin="">
-  <link rel="preload" href="fonts/poppins-medium.woff2" as="font" type="font/woff2" crossorigin="">
-  <link rel="preload" href="fonts/poppins-regular.woff2" as="font" type="font/woff2" crossorigin="">
-  <link rel="icon" href="favicon.ico">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Jewellery</title>
+  <link rel="preload" href="fonts/cormorant-garamond-bold.woff2" as="font" type="font/woff2" crossorigin="">
+  <link rel="preload" href="fonts/cormorant-garamond-semibold.woff2" as="font" type="font/woff2" crossorigin="">
+  <link rel="preload" href="fonts/cormorant-garamond-italic.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="fonts/poppins-bold.woff2" as="font" type="font/woff2" crossorigin="">
+  <link rel="preload" href="fonts/poppins-medium.woff2" as="font" type="font/woff2" crossorigin="">
+  <link rel="preload" href="fonts/poppins-regular.woff2" as="font" type="font/woff2" crossorigin="">
   <link rel="stylesheet" href="css/style.min.css">
+
+  <link rel="icon" href="favicon.ico">
 </head>
 <body class="page__body">
+
   <header class="page-header">
   <div class="page-container">
     <div class="logo logo_fixed">
@@ -23,12 +27,13 @@
     </div>
   </div>
 </header>
+
   <main class="page__login">
     <section class="modal">
       <div class="modal__wrapper">
         <div class="modal__login">
           <h2>Log In</h2>
-          <form class="modal__form">
+          <form class="modal__form" method="post" action="https://echo.htmlacademy.ru/">
             <ul class="modal__form-list">
               <li class="modal__list-item">
                 <div class="field field_ordinary">
@@ -54,22 +59,30 @@
       </div>
     </section>
   </main>
-  <footer>
+
+  <footer class="page-footer">
     <div class="page-container">
       <div class="page-footer__wrapper">
         <div class="page-footer__subscription">
           <div class="subscription">
-            <p>The good stuff in your inbox</p>
-            <p>News and updates from CH. No spam, we promise.</p>
-            <div class="subscription__info">
-              <input type="text" id="user-subscribe-email" placeholder="Your E-mail">
-              <label for="user-subscribe-email"></label>
-              <a href="#">Sign up</a>
-            </div>
+            <p class="subscription__lead">The good stuff in your inbox</p>
+            <p class="subscription__text">News and updates from CH. No spam, we promise.</p>
+            <form class="subscription__form" action="" method="get">
+              <div class="field">
+                <input type="text" id="user-email-subscription" placeholder="Your E-mail">
+                <label for="user-email-subscription"></label>
+              </div>
+              <button class="subscription__button" type="submit">
+                <span>Sign Up</span>
+                <svg width="32" height="10">
+                  <use xlink:href="img/sprite_auto.svg#icon-arrow-ordinary"></use>
+                </svg>
+              </button>
+            </form>
           </div>
         </div>
         <div class="page-footer__navigation">
-          <nav class="site-navigation">
+          <nav class="site-navigation site-navigation_footer_position">
             <div class="site-navigation__wrapper">
               <ul class="site-navigation__list">
                 <li class="site-navigation__item">
@@ -84,6 +97,8 @@
                 <li class="site-navigation__item">
                   <a>Delivery</a>
                 </li>
+              </ul>
+              <ul class="site-navigation__list">
                 <li class="site-navigation__item">
                   <a>About CH</a>
                 </li>
@@ -105,34 +120,34 @@
             <ul class="social__list">
               <li class="social__item">
                 <a class="social__link social__link_facebook" href="#">
-                  <span>Facebook</span>
-                  <svg class="social__link-icon social__link-icon_fb">
-                    <use></use>
+                  <svg class="social__link-icon social__link-icon_fb" width="8" height="15" viewBox="0 0 8 15">
+                    <use xlink:href="img/sprite_auto.svg#icon-facebook"></use>
                   </svg>
+                  <span>Facebook</span>
                 </a>
               </li>
               <li class="social__item">
                 <a class="social__link social__link_instagram" href="#">
-                  <span>Instagram</span>
-                  <svg class="social__link-icon social__link-icon_inst">
-                    <use></use>
+                  <svg class="social__link-icon social__link-icon_inst" width="15" height="15" viewBox="0 0 15 15">
+                    <use xlink:href="img/sprite_auto.svg#icon-instagram"></use>
                   </svg>
+                  <span>Instagram</span>
                 </a>
               </li>
               <li class="social__item">
                 <a class="social__link social__link_pinterest" href="#">
-                  <span>Pinterest</span>
-                  <svg class="social__link-icon social__link-icon_pinterest">
-                    <use></use>
+                  <svg class="social__link-icon social__link-icon_pinterest" width="15" height="15" viewBox="0 0 16 15">
+                    <use xlink:href="img/sprite_auto.svg#icon-pinterest"></use>
                   </svg>
+                  <span>Pinterest</span>
                 </a>
               </li>
               <li class="social__item">
                 <a class="social__link social__link_twitter" href="#">
-                  <span>Twitter</span>
-                  <svg class="social__link-icon social__link-icon_twitter">
-                    <use></use>
+                  <svg class="social__link-icon social__link-icon_twitter" width="15" height="15" viewBox="0 0 15 13">
+                    <use xlink:href="img/sprite_auto.svg#icon-twitter"></use>
                   </svg>
+                  <span>Twitter</span>
                 </a>
               </li>
             </ul>
@@ -141,5 +156,6 @@
       </div>
     </div>
   </footer>
+
 </body>
 </html>

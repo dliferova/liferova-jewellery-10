@@ -7,6 +7,17 @@
   background-size: 100% 138px;
   background-color: #F0EAE4;
   padding: 180px 0 60px;
+  position: relative;
+}
+
+.modal__close-button {
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  background-color: transparent;
+  border:none;
+  top: 20px;
+  right: 20px;
 }
 
 .modal h2 {
