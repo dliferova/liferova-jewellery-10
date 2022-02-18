@@ -7,8 +7,8 @@
   color: $text-black;
   padding-bottom: 1px;
   border-bottom: 1px solid $brown-ordinary;
+}
 
-  &:hover {
-    color: rgba($text-black, 0.6);
-  }
+.section-link:hover {
+  color: rgba($text-black, 0.6);
 }

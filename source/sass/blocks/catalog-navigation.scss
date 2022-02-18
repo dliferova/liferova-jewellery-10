@@ -47,15 +47,15 @@
   font-weight: 500;
   padding: 10px 0;
 
-  &:hover {
-    color: rgba($text-black, 0.6);
-  }
-
   @media (max-width: $tablet-width-max) {
     color: $white;
     font-size: 24px;
     font-weight: 500;
   }
+}
+
+.catalog-navigation__list a:hover {
+  color: rgba($text-black, 0.6);
 }
 
 .catalog-navigation__control-buttons {
