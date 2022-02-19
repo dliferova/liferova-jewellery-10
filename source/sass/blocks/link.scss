@@ -24,6 +24,10 @@
   display: flex;
   justify-content: flex-end;
   padding: 10px 0 0;
+
+  @media (max-width: $tablet-width-max) {
+    padding: 4px 0 0;
+  }
 }
 
 .link_theme_grey:hover {

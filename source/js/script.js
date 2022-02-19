@@ -98,25 +98,28 @@ const setupFilterFormAccordion = () => {
   }
 
   form.addEventListener('click', (evt) => {
-
     if (evt.target.classList.contains('filter__button')) {
       onItemClick(evt.target)
     }
-
   });
 }
 
 setupFilterFormAccordion();
 
-//POPUP
-const loginButton = document.querySelector('.login');
-const linkToFullPage = loginButton.querySelector('.link');
 const loginPopup = document.querySelector('.modal');
 const loginPopupCLoseButton = loginPopup.querySelector('.modal__close-button');
 const modalForm = loginPopup.querySelector('.modal__form');
 const emailInput = modalForm.querySelector('#email-login');
 
 let isModalOpened = false;
+
+pageHeader.addEventListener('click', (evt) => {
+  if (evt.composedPath().find(item => item.classList && item.classList.contains('link-modal'))) {
+    evt.preventDefault();
+    isModalOpened = true;
+    controlPopupLogin();
+  }
+})
 
 const controlPopupLogin = () => {
   loginPopup.classList.toggle('visually-hidden');
@@ -133,12 +136,6 @@ const onKeyPress = (evt) => {
     }
   }
 }
-
-linkToFullPage.addEventListener('click', (evt) => {
-  evt.preventDefault();
-  isModalOpened = true;
-  controlPopupLogin();
-});
 
 loginPopupCLoseButton.addEventListener('click', () => {
   isModalOpened = false;

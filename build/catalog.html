@@ -53,7 +53,7 @@
 
     <div class="page-header__login">
       <div class="login">
-        <a class="link link_ordinary" href="login-page.html">
+        <a class="link-modal link link_ordinary" href="#">
           <span>Login</span>
         </a>
       </div>
@@ -97,19 +97,20 @@
       <div class="site-navigation__wrapper">
         <ul class="site-navigation__list">
           <li class="site-navigation__item">
-            <a>About CH</a>
+            <a href="#">About CH</a>
           </li>
           <li class="site-navigation__item">
-            <a>Stores & Hours</a>
+            <a href="#">Stores & Hours</a>
           </li>
           <li class="site-navigation__item">
-            <a>Contact Us</a>
+            <a href="#">Contact Us</a>
           </li>
         </ul>
       </div>
     </nav>
     <div class="login login_mobile_theme">
-      <a class="link link_ordinary" href="login-page.html">
+<!--      <a class="link-modal link link_ordinary" href="login-page.html">-->
+      <a class="link-modal link link_ordinary" href="#">
         <span>Login</span>
       </a>
     </div>
@@ -412,6 +413,41 @@
       </div>
     </section>
   </div>
+
+  <section class="modal visually-hidden">
+    <div class="modal__wrapper">
+      <button type="button" class="modal__close-button" aria-label="close login window">
+        <svg width="14" height="14">
+          <use xlink:href="img/sprite_auto.svg#icon-cross"></use>
+        </svg>
+      </button>
+      <div class="modal__login">
+        <p class="modal__subtitle">Log In</p>
+        <form class="modal__form" method="post" action="https://echo.htmlacademy.ru/">
+          <ul class="modal__form-list">
+            <li class="modal__list-item">
+              <div class="field field_ordinary">
+                <input type="email" name="email-login" id="email-login" placeholder="Your E-mail" required="">
+                <label for="email-login" class="visually-hidden">Your E-mail</label>
+              </div>
+            </li>
+            <li class="modal__list-item">
+              <div class="field field_ordinary">
+                <input type="text" name="password-login" id="user-password" placeholder="Password" required="">
+                <label for="user-password"></label>
+              </div>
+              <a class="link link_theme_grey" href="#">Forgot your password?</a>
+            </li>
+          </ul>
+          <button class="modal__button" type="submit"><span>Log In</span></button>
+        </form>
+        <div class="modal__register">
+          <p>Don’t have an account?</p>
+          <a class="link link_ordinary" href="#">Sign up</a>
+        </div>
+      </div>
+    </div>
+  </section>
 </main>
 
 <footer class="page-footer">
