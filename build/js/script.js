@@ -107,3 +107,56 @@ const setupFilterFormAccordion = () => {
 }
 
 setupFilterFormAccordion();
+
+//POPUP
+const loginButton = document.querySelector('.login');
+const linkToFullPage = loginButton.querySelector('.link');
+const loginPopup = document.querySelector('.modal');
+const loginPopupCLoseButton = loginPopup.querySelector('.modal__close-button');
+const modalForm = loginPopup.querySelector('.modal__form');
+const emailInput = modalForm.querySelector('#email-login');
+
+let isModalOpened = false;
+
+const controlPopupLogin = () => {
+  loginPopup.classList.toggle('visually-hidden');
+  loginPopup.classList.toggle('modal_opened');
+  pageBody.classList.toggle('page__body_locked');
+  emailInput.focus();
+}
+
+const onKeyPress = (evt) => {
+  if (evt.key === 'Escape' || evt.key === 'Esc') {
+    if (isModalOpened) {
+      evt.preventDefault();
+      controlPopupLogin();
+    }
+  }
+}
+
+linkToFullPage.addEventListener('click', (evt) => {
+  evt.preventDefault();
+  isModalOpened = true;
+  controlPopupLogin();
+});
+
+loginPopupCLoseButton.addEventListener('click', () => {
+  isModalOpened = false;
+  controlPopupLogin();
+});
+
+document.body.addEventListener('click', (evt) => {
+  if (evt.target === loginPopup) {
+    controlPopupLogin();
+  }
+})
+
+document.addEventListener('keydown', onKeyPress);
+
+const EMAIL_INPUT_VALUE_STORAGE_KEY = 'loginFormInputValue';
+
+emailInput.value = localStorage.getItem(EMAIL_INPUT_VALUE_STORAGE_KEY);
+
+emailInput.addEventListener('change', (evt) => {
+  localStorage.setItem(EMAIL_INPUT_VALUE_STORAGE_KEY, evt.target.value)
+})

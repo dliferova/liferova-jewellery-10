@@ -15,6 +15,12 @@
   position: relative;
 }
 
+.page__body_locked {
+  position: fixed;
+  width: 100vw;
+  overflow-y: hidden;
+}
+
 .page__body h2 {
   @include font-family-cormorant-garamond;
   font-size: 34px;
@@ -25,4 +31,11 @@
 
 .page__login {
   padding: 80px 0;
+}
+
+.page__login .modal {
+  display: block;
+  position: relative;
+  width: 100%;
+  height: auto;
 }
