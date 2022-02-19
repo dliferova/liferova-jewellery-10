@@ -98,19 +98,14 @@ const setupFilterFormAccordion = () => {
   }
 
   form.addEventListener('click', (evt) => {
-
     if (evt.target.classList.contains('filter__button')) {
       onItemClick(evt.target)
     }
-
   });
 }
 
 setupFilterFormAccordion();
 
-//POPUP
-
-// const linkModal = document.querySelector('.link-modal');
 const loginPopup = document.querySelector('.modal');
 const loginPopupCLoseButton = loginPopup.querySelector('.modal__close-button');
 const modalForm = loginPopup.querySelector('.modal__form');
@@ -120,7 +115,6 @@ let isModalOpened = false;
 
 pageHeader.addEventListener('click', (evt) => {
   if (evt.composedPath().find(item => item.classList && item.classList.contains('link-modal'))) {
-    console.log('Хрю')
     evt.preventDefault();
     isModalOpened = true;
     controlPopupLogin();

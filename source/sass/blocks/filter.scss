@@ -21,14 +21,18 @@
 
 .filter ul {
   @include resetting-styles-list;
-  padding: 0 35px 16px;
   border: 1px solid $brown-ordinary;
   border-top: none;
   border-bottom: none;
+  padding: 0 35px 16px;
 }
 
 .filter__content {
   display: none;
+}
+
+.filter fieldset:last-of-type {
+  border-bottom: 1px solid $brown-ordinary;
 }
 
 .filter_nojs .filter__content {
@@ -88,8 +92,9 @@
 //Price range
 
 .filter__range {
-  border: 1px solid $brown-ordinary;;
+  border: 1px solid $brown-ordinary;
   border-top: none;
+  border-bottom: none;
 }
 
 .filter__range-controls {

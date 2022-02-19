@@ -67,6 +67,11 @@
   }
 }
 
+.faq__question:hover {
+  color: $grey;
+  transition: all .8s ease;
+}
+
 .faq__question::after {
   content: "";
   position: absolute;
