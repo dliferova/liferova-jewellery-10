@@ -43,7 +43,7 @@ if (filterPopupElement) {
 }
 
 //FAQ accordeon realisation
-const setupAccordion = () => {
+const setupFaqAccordion = () => {
   const accordion = document.querySelector('.faq__list')
   if (!accordion) {
     return;
@@ -84,4 +84,46 @@ const setupAccordion = () => {
   })
 }
 
-setupAccordion()
+setupFaqAccordion()
+
+
+//FAQ accordeon realisation
+const setupFilterFormAccordion = () => {
+  const form = document.querySelector('.filter__form')
+  if (!form) {
+    return;
+  }
+  const formButtons = form.querySelectorAll('.filter__button')
+
+  const formButtonsGroup = {}
+  let openedItem = null;
+
+  const toggleItem = (element) => {
+    element.classList.toggle('filter__button_active')
+  }
+
+  const onItemClick = (item) => {
+    if (openedItem && openedItem === item.id) {
+      toggleItem(item)
+      openedItem = null;
+    } else if (openedItem && openedItem !== item.id) {
+      toggleItem(formButtonsGroup[openedItem])
+      toggleItem(item)
+      openedItem = item.id
+    } else {
+      toggleItem(item)
+      openedItem = item.id
+    }
+  }
+
+  formButtons.forEach(item => {
+    formButtonsGroup[item.id] = item;
+    toggleItem(item)
+    item.addEventListener('click', (evt) => {
+      console.log(evt)
+      onItemClick(item)
+    })
+  })
+}
+
+setupFilterFormAccordion()

@@ -25,10 +25,13 @@
   border: 1px solid $brown-ordinary;
   border-top: none;
   border-bottom: none;
+}
+
+.filter__content {
   display: none;
 }
 
-.filter_nojs ul {
+.filter_nojs .filter__content {
   display: block;
 }
 
@@ -36,7 +39,7 @@
   display: none;
 }
 
-.filter__button_active + ul {
+.filter__button_active + .filter__content {
   display: block;
 }
 
