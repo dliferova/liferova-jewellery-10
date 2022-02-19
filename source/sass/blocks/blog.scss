@@ -7,6 +7,11 @@
   @media (max-width: $tablet-width-max) {
     grid-template-columns: 1fr;
     grid-gap: 50px;
+    padding-top: 10px;
+  }
+
+  @media (max-width: $mobile-width-only) {
+    grid-gap: 39px;
   }
 }
 

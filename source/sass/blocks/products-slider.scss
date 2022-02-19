@@ -4,13 +4,20 @@
 
 .products-slider__list {
   @include resetting-styles-list;
-  display: flex;
-  flex-direction: row;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  column-gap: 30px;
   margin: 0 0 49px;
 
   @media (max-width: 1280px) {
     margin: 0 0 40px;
     justify-content: center;
+  }
+
+  @media (max-width: $tablet-width-max) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin: 0 0 27px;
   }
 }
 
@@ -43,7 +50,7 @@
   @include resetting-styles-list;
   width: 100%;
   position: absolute;
-  top: -100px;
+  top: -109px;
   display: flex;
   justify-content: space-between;
 }
@@ -52,6 +59,7 @@
   border: none;
   background-color: transparent;
   cursor: pointer;
+  padding: 5px 0;
 }
 
 .products-slider__btn_left svg {

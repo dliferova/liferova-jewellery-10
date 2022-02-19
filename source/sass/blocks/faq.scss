@@ -4,8 +4,12 @@
   overflow: hidden;
   padding: 25px 0 0;
 
-  @media (max-width: $mobile-width-only) {
+  @media (max-width: $tablet-width-max) {
     width: 100%;
+  }
+
+  @media (max-width: $mobile-width-only) {
+    padding: 9px 0 0;
   }
 }
 
@@ -27,8 +31,12 @@
   box-sizing: border-box;
   padding: 44px 50px 35px 41px;
 
+  @media (max-width: $tablet-width-max) {
+    padding: 44px 10px 20px 48px;
+  }
+
   @media (max-width: $mobile-width-only) {
-    padding: 22px 15px;
+    padding: 17px 15px 26px 26px;
   }
 }
 
@@ -48,8 +56,14 @@
   cursor: pointer;
   text-align: left;
 
+  @media (max-width: $tablet-width-max) {
+    margin: 0 0 25px;
+  }
+
   @media (max-width: $mobile-width-only) {
     font-size: 16px;
+    width: 73%;
+    margin: 0 0 7px;
   }
 }
 
@@ -66,6 +80,16 @@
   background-repeat: no-repeat;
   background-position: center;
   transition: background-color 0.3s ease-out;
+
+  @media (max-width: $tablet-width-max) {
+    width: 23px;
+    height: 12px;
+    right: 6%;
+  }
+
+  @media (max-width: $tablet-width-max) {
+    right: -32%;
+  }
 }
 
 .faq__answer {
@@ -73,6 +97,10 @@
   height: 0;
   opacity: 0;
   padding: 0 0 0 10px;
+
+  @media (max-width: $tablet-width-max) {
+    padding: 0;
+  }
 }
 
 .faq__answer_show {
@@ -81,15 +109,21 @@
   z-index: 1;
   opacity: 1;
 
+  @media (max-width: $tablet-width-max) {
+    width: 535px;
+    padding-bottom: 22px;
+  }
+
   @media (max-width: $mobile-width-only) {
-    width: 205px;
+    width: 183px;
+    padding-bottom: 0;
   }
 }
 
 .faq__answer p {
+  @include font-family-poppins;
   width: auto;
   margin: 0;
-  font-family: inherit;
   font-style: normal;
   font-size: 16px;
   line-height: 130%;
@@ -98,6 +132,7 @@
   @media (max-width: $mobile-width-only) {
     font-size: 14px;
     max-width: 204px;
+    line-height: 142%;
   }
 }
 
@@ -112,4 +147,14 @@
   background-image: url("../img/icons/arrow-up.svg");
   background-repeat: no-repeat;
   background-position: center;
+
+  @media (max-width: $tablet-width-max) {
+    width: 23px;
+    height: 12px;
+    right: 6%;
+  }
+
+  @media (max-width: $tablet-width-max) {
+    right: -32%;
+  }
 }

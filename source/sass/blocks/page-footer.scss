@@ -2,6 +2,15 @@
   background-color: $black;
   min-height: 337px;
   padding: 90px 0 65px;
+
+  @media (max-width: $tablet-width-max) {
+    min-height: 446px;
+    padding: 53px 0 65px;
+  }
+
+  @media (max-width: $mobile-width-only) {
+    padding: 53px 0 58px;
+  }
 }
 
 .page-footer__wrapper {
@@ -13,14 +22,14 @@
   @media (max-width: $tablet-width-max) {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    padding: 50px 0 60px;
-    row-gap: 50px;
+    row-gap: 48px;
     column-gap: 63px;
     width: 85%;
   }
 
   @media (max-width: $mobile-width-only) {
     grid-template-columns: 1fr;
+    row-gap: 44px;
     width: 100%;
   }
 }

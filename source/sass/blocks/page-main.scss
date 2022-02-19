@@ -1,15 +1,43 @@
 .page-main__products-slider {
   padding: 116px 0 0;
+
+  @media (max-width: $tablet-width-max) {
+    padding: 70px 0 0;
+  }
+
+  @media (max-width: $mobile-width-only) {
+    padding: 60px 0 0;
+  }
 }
 
 .page-main__blog {
   padding: 111px 0 0;
+
+  @media (max-width: $tablet-width-max) {
+    padding: 57px 0 0;
+  }
+
+  @media (max-width: $mobile-width-only) {
+    padding: 52px 0 0;
+  }
 }
 
 .page-main__faq {
   padding: 120px 0 0;
+
+  @media (max-width: $tablet-width-max) {
+    padding: 70px 0 0;
+  }
+
+  @media (max-width: $mobile-width-only) {
+    padding: 60px 0 0;
+  }
 }
 
 .page-main__social {
   padding: 106px 0 140px;
+
+  @media (max-width: $tablet-width-max) {
+    padding: 59px 0 71px;
+  }
 }

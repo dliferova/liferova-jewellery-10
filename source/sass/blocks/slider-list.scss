@@ -1,10 +1,5 @@
-.slider-list {
-  @include resetting-styles-list;
-}
-
 .slider-list__item {
   display: block;
-  margin: 0 30px 0 0;
 }
 
 .slider-list__item:last-child {

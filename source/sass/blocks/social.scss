@@ -1,10 +1,19 @@
 .social__list {
   @include resetting-styles-list;
+  padding: 7px 0 0 0;
+
+  @media (max-width: $tablet-width-max) {
+    padding: 0 0 0 19px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
 
   @media (max-width: $mobile-width-only) {
-    display: flex;
+    flex-direction: row;
     justify-content: flex-start;
     align-items: center;
+    padding: 0;
   }
 }
 
@@ -26,7 +35,7 @@
 }
 
 .social__link svg {
-  margin: 0 20px 0 0;
+  margin: 0 12px 0 0;
   fill: $white;
 
   @media (max-width: $mobile-width-only) {

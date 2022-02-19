@@ -11,6 +11,7 @@
   line-height: 130%;
   font-weight: 500;
   margin: 0;
+  padding-bottom: 6px;
 
   @media (max-width: $mobile-width-only) {
     max-width: 130px;
@@ -43,5 +44,6 @@
   @media (max-width: $mobile-width-only) {
     width: 130px;
     height: 136px;
+    margin: 0 0 8px;
   }
 }
