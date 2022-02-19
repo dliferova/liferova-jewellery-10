@@ -42,16 +42,14 @@ if (filterPopupElement) {
   })
 }
 
-//FAQ accordeon realisation
 const setupFaqAccordion = () => {
-  const accordion = document.querySelector('.faq__list')
+  const accordion = document.querySelector('.faq__list');
+
   if (!accordion) {
     return;
   }
-  const accordionItems = accordion.querySelectorAll('.faq__item')
 
-  const accordionItemsGroup = {}
-  let openedItem = null;
+  const accordionItems = accordion.querySelectorAll('.faq__item')
 
   const toggleItem = (element) => {
     const button = element.querySelector('.faq__question');
@@ -61,69 +59,51 @@ const setupFaqAccordion = () => {
   }
 
   const onItemClick = (item) => {
-    if (openedItem && openedItem === item.id) {
-      toggleItem(item)
-      openedItem = null;
-    } else if (openedItem && openedItem !== item.id) {
-      toggleItem(accordionItemsGroup[openedItem])
-      toggleItem(item)
-      openedItem = item.id
-    } else {
-      toggleItem(item)
-      openedItem = item.id
-    }
+    toggleItem(item);
   }
 
+  accordion.addEventListener('click', (evt) => {
+
+    if (evt.composedPath().find(item => item.classList && item.classList.contains('faq__item-wrapper'))) {
+
+      const faqItem = evt.composedPath().find(item => item.classList && item.classList.contains('faq__item'));
+
+      if (faqItem) {
+        onItemClick(faqItem);
+      }
+    }
+  })
+
   accordionItems.forEach(item => {
-    accordionItemsGroup[item.id] = item;
     toggleItem(item)
-    item.addEventListener('click', (evt) => {
-      console.log(evt)
-      onItemClick(item)
-    })
   })
 }
 
 setupFaqAccordion()
 
 
-//FAQ accordeon realisation
 const setupFilterFormAccordion = () => {
-  const form = document.querySelector('.filter__form')
+  const form = document.querySelector('.filter__form');
+
   if (!form) {
     return;
   }
-  const formButtons = form.querySelectorAll('.filter__button')
-
-  const formButtonsGroup = {}
-  let openedItem = null;
 
   const toggleItem = (element) => {
     element.classList.toggle('filter__button_active')
   }
 
   const onItemClick = (item) => {
-    if (openedItem && openedItem === item.id) {
-      toggleItem(item)
-      openedItem = null;
-    } else if (openedItem && openedItem !== item.id) {
-      toggleItem(formButtonsGroup[openedItem])
-      toggleItem(item)
-      openedItem = item.id
-    } else {
-      toggleItem(item)
-      openedItem = item.id
-    }
+    toggleItem(item)
   }
 
-  formButtons.forEach(item => {
-    formButtonsGroup[item.id] = item;
-    toggleItem(item)
-    item.addEventListener('click', (evt) => {
-      console.log(evt)
-      onItemClick(item)
-    })
-  })
+  form.addEventListener('click', (evt) => {
+
+    if (evt.target.classList.contains('filter__button')) {
+      onItemClick(evt.target)
+    }
+
+  });
 }
 
-setupFilterFormAccordion()
+setupFilterFormAccordion();
