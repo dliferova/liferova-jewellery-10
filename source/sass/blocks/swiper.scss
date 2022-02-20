@@ -21,10 +21,6 @@
   }
 }
 
-.swiper-wrapper {
-  position: relative;
-}
-
 .swiper__item div {
   width: 270px;
   height: 346px;
@@ -47,27 +43,4 @@
     height: 136px;
     background-color: royalblue;
   }
-}
-
-.swiper-wrapper {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-.swiper-pagination__item {
-  width: 20px;
-  height: 20px;
-  background-color: transparent;
-  border: none;
-  text-align: center;
-  line-height: 130%;
-  font-size: 16px;
-  color: $grey;
-  opacity: 1;
-}
-
-.swiper-pagination-bullet-active {
-  --swiper-theme-color: $white;
-  color: $black;
 }
