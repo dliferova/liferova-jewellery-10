@@ -7,6 +7,7 @@
 
 .filter fieldset:last-of-type {
   margin: 0 0 35px;
+  border-bottom: 1px solid $brown-ordinary;
 }
 
 .filter legend {
@@ -29,10 +30,6 @@
 
 .filter__content {
   display: none;
-}
-
-.filter fieldset:last-of-type {
-  border-bottom: 1px solid $brown-ordinary;
 }
 
 .filter_nojs .filter__content {
