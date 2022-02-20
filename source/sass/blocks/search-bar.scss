@@ -1,10 +1,10 @@
-.search-bar__form {
+.search-bar form {
   display: flex;
   align-items: center;
   justify-content: flex-start;
 }
 
-.search-bar__input {
+.search-bar input {
   border: none;
   cursor: pointer;
 
@@ -21,7 +21,7 @@
   }
 }
 
-.search-bar__button {
+.search-bar button {
   border: none;
   background-color: transparent;
   width: 18px;
@@ -42,7 +42,7 @@
   }
 }
 
-.search-bar__button::before {
+.search-bar button::before {
   content: "";
   width: 14px;
   height: 14px;
@@ -59,7 +59,7 @@
   }
 }
 
-.search-bar__input::placeholder {
+.search-bar input::placeholder {
   font-size: 14px;
   color: $grey;
   font-weight: 500;
@@ -69,6 +69,6 @@
   }
 }
 
-.search-bar__input:focus-visible {
+.search-bar input:focus-visible {
   outline: none;
 }

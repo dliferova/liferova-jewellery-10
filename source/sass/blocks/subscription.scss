@@ -1,4 +1,4 @@
-.subscription__form {
+.subscription form {
   min-width: 500px;
   display: inline-flex;
   align-items: flex-end;
@@ -18,7 +18,7 @@
   }
 }
 
-.subscription__form .field {
+.subscription .field {
   width: 72%;
 
   @media (max-width: $mobile-width-only) {
@@ -53,7 +53,7 @@
   }
 }
 
-.subscription__button {
+.subscription button {
   padding: 10px 0;
   cursor: pointer;
   border: none;
@@ -64,7 +64,7 @@
   align-items: center;
 }
 
-.subscription__button span {
+.subscription button span {
   color: $white;
   font-size: 16px;
   margin-right: 20px;

@@ -159,13 +159,11 @@ emailInput.addEventListener('change', (evt) => {
 })
 
 const swiper = new Swiper('.swiper', {
-  // Optional parameters
   direction: 'horizontal',
   loop: false,
   slidesPerView: 4,
   slidesPerGroup: 4,
 
-  // Pagination
   pagination: {
     el: '.swiper-pagination',
     bulletClass: 'swiper-pagination__item',
@@ -176,7 +174,6 @@ const swiper = new Swiper('.swiper', {
     },
   },
 
-  // Navigation arrows
   navigation: {
     nextEl: '.button-next',
     prevEl: '.button-prev',
