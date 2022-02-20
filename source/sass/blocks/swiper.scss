@@ -1,0 +1,51 @@
+.swiper {
+  width: 1170px;
+  height: 363px;
+
+  @media (max-width: 1280px) {
+    width: 930px;
+  }
+
+  @media (max-width: 1024px) {
+    height: 409px;
+  }
+
+  @media (max-width: $tablet-width-max) {
+    width: 678px;
+  }
+
+  @media (max-width: $mobile-width-only) {
+    width: 290px;
+    height: 240px;
+  }
+}
+
+.swiper__item div {
+  width: 270px;
+  height: 346px;
+
+  @media (max-width: 1280px) {
+    width: 210px;
+    height: 214px;
+    background-color: #a89cc8;
+  }
+
+  @media (max-width: $tablet-width-max) {
+    margin: 0 auto;
+    width: 324px;
+    height: 340px;
+    background-color: green;
+  }
+
+  @media (max-width: $mobile-width-only) {
+    width: 130px;
+    height: 136px;
+    background-color: royalblue;
+  }
+}
+
+.swiper-wrapper {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}

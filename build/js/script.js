@@ -157,3 +157,39 @@ emailInput.value = localStorage.getItem(EMAIL_INPUT_VALUE_STORAGE_KEY);
 emailInput.addEventListener('change', (evt) => {
   localStorage.setItem(EMAIL_INPUT_VALUE_STORAGE_KEY, evt.target.value)
 })
+
+const swiper = new Swiper('.swiper', {
+  // Optional parameters
+  direction: 'horizontal',
+  loop: false,
+  slidesPerView: 4,
+  slidesPerGroup: 4,
+
+  // Pagination
+  pagination: {
+    el: '.products-slider__pagination-list',
+  },
+
+  // Navigation arrows
+  navigation: {
+    nextEl: '.products-slider__btn_right',
+    prevEl: '.products-slider__btn_left',
+  },
+
+  breakpoints: {
+    320: {
+      slidesPerView: 2,
+      slidesPerGroup: 2,
+    },
+
+    768: {
+      slidesPerView: 2,
+      slidesPerGroup: 2,
+    },
+
+    1024: {
+      slidesPerView: 4,
+      slidesPerGroup: 4,
+    },
+  },
+});
