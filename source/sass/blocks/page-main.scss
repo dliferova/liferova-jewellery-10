@@ -1,5 +1,6 @@
 .page-main__products-slider {
   padding: 116px 0 0;
+  position: relative;
 
   @media (max-width: $tablet-width-max) {
     padding: 70px 0 0;

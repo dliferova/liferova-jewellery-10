@@ -1,3 +1,7 @@
+.products-slider__wrapper {
+  position: relative;
+}
+
 .products-slider__container {
   position: relative;
 }
@@ -56,6 +60,8 @@
 }
 
 .products-slider__btn {
+  width: 30px;
+  height: 15px;
   border: none;
   background-color: transparent;
   cursor: pointer;
@@ -66,3 +72,12 @@
   transform: rotate(180deg);
 }
 
+.products-slider__control-buttons {
+  width: 97%;
+  position: absolute;
+  top: 26%;
+  right: 51%;
+  transform: translateX(50%);
+  display: flex;
+  justify-content: space-between;
+}

@@ -167,22 +167,34 @@ const swiper = new Swiper('.swiper', {
 
   // Pagination
   pagination: {
-    el: '.products-slider__pagination-list',
+    el: '.swiper-pagination',
+    bulletClass: 'swiper-pagination__item',
+    clickable: true,
+    type: 'bullets',
+    renderBullet: function (index, className) {
+      return '<button class="' + className + '">' + (index + 1) + "</button>";
+    },
   },
 
   // Navigation arrows
   navigation: {
-    nextEl: '.products-slider__btn_right',
-    prevEl: '.products-slider__btn_left',
+    nextEl: '.button-next',
+    prevEl: '.button-prev',
   },
 
   breakpoints: {
     320: {
+      pagination: {
+        type: 'fraction',
+      },
       slidesPerView: 2,
       slidesPerGroup: 2,
     },
 
     768: {
+      pagination: {
+        type: 'bullets',
+      },
       slidesPerView: 2,
       slidesPerGroup: 2,
     },

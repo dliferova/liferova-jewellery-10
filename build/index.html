@@ -137,6 +137,7 @@
             <a href="catalog.html" class="section-link">Shop Now</a>
           </div>
           <div class="swiper">
+
             <div class="swiper-wrapper">
               <div class="swiper-slide swiper__item">
                 <div class="swiper__item-content">
@@ -322,34 +323,23 @@
                 </div>
               </div>
             </div>
-            <ol class="products-slider__pagination-list">
-              <li class="products-slider__pagination-item">
-                <button class="products-slider__pagination-button products-slider__pagination-button_active" type="button"><span>1</span></button>
-              </li>
-              <li class="products-slider__pagination-item">
-                <button class="products-slider__pagination-button" type="button"><span>2</span></button>
-              </li>
-              <li class="products-slider__pagination-item">
-                <button class="products-slider__pagination-button" type="button"><span>3</span></button>
-              </li>
-            </ol>
-            <ul class="products-slider__control-buttons">
-              <li>
-                <button class="products-slider__btn products-slider__btn_left" type="button" aria-label="slider show previous products">
-                  <svg width="34" height="10">
-                    <use xlink:href="img/sprite_auto.svg#icon-arrow"></use>
-                  </svg>
-                </button>
-              </li>
-              <li>
-                <button class="products-slider__btn products-slider__btn_right" type="button" aria-label="slider show next products">
-                  <svg width="34" height="10">
-                    <use xlink:href="img/sprite_auto.svg#icon-arrow"></use>
-                  </svg>
-                </button>
-              </li>
-            </ul>
+
+            <div class="swiper-pagination"></div>
+
           </div>
+        </div>
+
+        <div class="products-slider__control-buttons">
+        <button class="button-prev products-slider__btn products-slider__btn_left" type="button" aria-label="slider show previous products">
+          <svg width="34" height="10">
+            <use xlink:href="img/sprite_auto.svg#icon-arrow"></use>
+          </svg>
+        </button>
+        <button class="button-next products-slider__btn products-slider__btn_right" type="button" aria-label="slider show previous products">
+          <svg width="34" height="10">
+            <use xlink:href="img/sprite_auto.svg#icon-arrow"></use>
+          </svg>
+        </button>
         </div>
 
       </section>

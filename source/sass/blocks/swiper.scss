@@ -1,6 +1,6 @@
 .swiper {
   width: 1170px;
-  height: 363px;
+  height: 424px;
 
   @media (max-width: 1280px) {
     width: 930px;
@@ -12,12 +12,17 @@
 
   @media (max-width: $tablet-width-max) {
     width: 678px;
+    height: 497px;
   }
 
   @media (max-width: $mobile-width-only) {
     width: 290px;
-    height: 240px;
+    height: 286px;
   }
+}
+
+.swiper-wrapper {
+  position: relative;
 }
 
 .swiper__item div {
@@ -48,4 +53,21 @@
   list-style: none;
   padding: 0;
   margin: 0;
+}
+
+.swiper-pagination__item {
+  width: 20px;
+  height: 20px;
+  background-color: transparent;
+  border: none;
+  text-align: center;
+  line-height: 130%;
+  font-size: 16px;
+  color: $grey;
+  opacity: 1;
+}
+
+.swiper-pagination-bullet-active {
+  --swiper-theme-color: $white;
+  color: $black;
 }
