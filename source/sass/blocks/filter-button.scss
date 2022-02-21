@@ -12,6 +12,12 @@
   }
 }
 
+.filter-button:hover {
+  opacity: 0.8;
+  background-color: $brown-ordinary;
+  color: $white;
+}
+
 .filter-button:last-child {
   margin: 0;
 }
@@ -19,6 +25,10 @@
 .filter-button_decorated {
   background-color: $brown-ordinary;
   color: $white;
+}
+
+.filter-button_decorated:hover {
+  opacity: 0.8;
 }
 
 .filter-button_transparent {

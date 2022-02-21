@@ -16,6 +16,10 @@
   }
 }
 
+.catalog-list__item a:hover {
+  box-shadow: rgba(17, 17, 26, 0.1) 0 0 16px;
+}
+
 .catalog-list__item img {
   width: 270px;
   height: 271px;

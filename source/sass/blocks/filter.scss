@@ -175,6 +175,7 @@
 }
 
 .filter__label-check {
+  cursor: pointer;
   display: flex;
   align-items: center;
 }
@@ -187,6 +188,10 @@
     height: 15px;
     background-color: $brown-ordinary;
   }
+}
+
+.filter__input-checkbox:hover + .filter__label-check {
+  opacity: 0.7;
 }
 
 .filter__control-button-wrapper {

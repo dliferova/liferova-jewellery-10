@@ -9,6 +9,10 @@
   cursor: pointer;
 }
 
+.field input:hover::placeholder {
+  color: $white;
+}
+
 .field_ordinary {
   border-bottom: 1px solid black;
 }
