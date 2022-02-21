@@ -62,11 +62,16 @@
   }
 }
 
+.promo-section__slogan {
+  max-width: 350px;
+}
+
 .promo-section__slogan p {
   @include font-family-cormorant-garamond;
   line-height: 130%;
   color: $white;
   margin: 0;
+  max-width: 100%;
 }
 
 .promo-section__container_main-page_theme .promo-section__text {

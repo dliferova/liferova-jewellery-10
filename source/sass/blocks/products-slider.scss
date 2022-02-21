@@ -75,9 +75,13 @@
 .products-slider__control-buttons {
   width: 97%;
   position: absolute;
-  top: 26%;
+  top: 23%;
   right: 51%;
   transform: translateX(50%);
   display: flex;
   justify-content: space-between;
+
+  @media (max-width: $tablet-width-max) {
+    top: 15%;
+  }
 }

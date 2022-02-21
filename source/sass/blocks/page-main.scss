@@ -12,14 +12,14 @@
 }
 
 .page-main__blog {
-  padding: 111px 0 0;
+  padding: 115px 0 0;
 
   @media (max-width: $tablet-width-max) {
-    padding: 57px 0 0;
+    padding: 38px 0 0;
   }
 
   @media (max-width: $mobile-width-only) {
-    padding: 52px 0 0;
+    padding: 37px 0 0;
   }
 }
 
@@ -36,9 +36,13 @@
 }
 
 .page-main__social {
-  padding: 106px 0 140px;
+  padding: 106px 0 133px;
 
   @media (max-width: $tablet-width-max) {
-    padding: 59px 0 71px;
+    padding: 68px 0 80px;
+  }
+
+  @media (max-width: $mobile-width-only) {
+    padding: 59px 0 69px;
   }
 }
