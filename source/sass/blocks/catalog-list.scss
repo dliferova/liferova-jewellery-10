@@ -3,9 +3,40 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   position: relative;
-  grid-gap: 30px;
+  grid-gap: 31px;
+
+  @media (max-width: $tablet-width-max) {
+    padding-bottom: 71px;
+  }
 
   @media (max-width: $mobile-width-only) {
     grid-template-columns: repeat(2, 1fr);
+    row-gap: 18px;
+    padding-bottom: 41px;
   }
 }
+
+.catalog-list__item img {
+  width: 270px;
+  height: 271px;
+  object-fit: cover;
+  margin: 0 0 17px;
+
+  @media (max-width: 1280px) {
+    height: 214px;
+    width: 210px;
+  }
+
+  @media (max-width: $tablet-width-max) {
+    width: 206px;
+    height: 208px;
+  }
+
+  @media (max-width: $mobile-width-only) {
+    width: 130px;
+    height: 136px;
+    margin: 0 0 15px;
+  }
+}
+
+

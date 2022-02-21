@@ -8,6 +8,10 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+
+  @media (max-width: $mobile-width-only) {
+    padding: 0 14px;
+  }
 }
 
 .promo-section__container_main-page_theme {
@@ -60,10 +64,6 @@
       background-image: url("../img/catalog-promo-mobile@2x.jpg");
     }
   }
-}
-
-.promo-section__slogan {
-  max-width: 350px;
 }
 
 .promo-section__slogan p {

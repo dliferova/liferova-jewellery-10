@@ -26,25 +26,25 @@
   letter-spacing: 0.6px;
 }
 
-.product-card img {
-  width: 270px;
-  height: 284px;
-  object-fit: cover;
-  margin: 0 0 17px;
-
-  @media (max-width: 1280px) {
-    height: 214px;
-    width: 210px;
-  }
-
-  @media (max-width: $tablet-width-max) {
-    width: 324px;
-    height: 340px;
-  }
-
-  @media (max-width: $mobile-width-only) {
-    width: 130px;
-    height: 136px;
-    margin: 0 0 8px;
-  }
-}
+//.product-card img {
+//  width: 270px;
+//  height: 271px;
+//  object-fit: cover;
+//  margin: 0 0 17px;
+//
+//  @media (max-width: 1280px) {
+//    height: 214px;
+//    width: 210px;
+//  }
+//
+//  @media (max-width: $tablet-width-max) {
+//    width: 324px;
+//    height: 340px;
+//  }
+//
+//  @media (max-width: $mobile-width-only) {
+//    width: 130px;
+//    height: 136px;
+//    margin: 0 0 8px;
+//  }
+//}
