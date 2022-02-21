@@ -27,7 +27,6 @@
 
 .faq__item-wrapper {
   position: relative;
-  //min-height: 112px;
   box-sizing: border-box;
   padding: 44px 50px 35px 41px;
 
@@ -36,7 +35,7 @@
   }
 
   @media (max-width: $mobile-width-only) {
-    padding: 17px 15px 9px 26px;
+    padding: 17px 15px 12px 26px;
   }
 }
 

@@ -22,7 +22,9 @@
 }
 
 .instagram-album__wrapper {
-  padding: 8px 0 0 0;
+  @media (max-width: $tablet-width-max) {
+    padding: 8px 0 0 0;
+  }
 
   @media (max-width: $mobile-width-only) {
     padding: 3px 0 0 0;

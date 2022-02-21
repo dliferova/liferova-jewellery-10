@@ -258,12 +258,20 @@
   display: none;
 }
 
-.filter__popup_opened > .filter__popup-close-button {
-  background-color: transparent;
-  display: block;
-  position: absolute;
-  top: 11px;
-  left: 70%;
+.filter__popup_opened .filter__popup-close-button {
+  display: none;
+
+  @media (max-width: $tablet-width-max) {
+    background-color: transparent;
+    display: block;
+    position: absolute;
+    top: 11px;
+    left: 58%;
+  }
+
+  @media (max-width: $mobile-width-only) {
+    left: 85%;
+  }
 }
 
 .filter__popup_opened > .filter__control-button-wrapper {
