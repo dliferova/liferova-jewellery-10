@@ -1,0 +1,36 @@
+.page__navigation {
+  display: flex;
+  align-items: center;
+}
+
+.project-navigation {
+  display: flex;
+  flex-direction: column;
+}
+
+.project-navigation h1 {
+  @include font-family-poppins;
+  font-size: 48px;
+  color: $brown-ordinary;
+  font-weight: 400;
+  width: 200px;
+  margin: 0 auto 78px;
+}
+
+.project-navigation ul {
+  @include resetting-styles-list;
+}
+
+.project-navigation li {
+  margin-bottom: 28px;
+}
+
+.project-navigation a {
+  color: $black;
+  font-size: 22px;
+  line-height: 130%;
+}
+
+.project-navigation a:hover {
+  color: $grey;
+}
