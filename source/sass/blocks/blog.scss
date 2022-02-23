@@ -37,16 +37,16 @@
 }
 
 .blog__item:nth-child(2n) {
-  @media (min-width: $desktop-width-min) {
-    background-position: right;
+  background-position: right;
+
+  @media (max-width: $mobile-width-only) {
+    background-position: top;
   }
 }
 
 .blog__item:nth-child(2n) .article {
-  @media (min-width: $desktop-width-min) {
     margin-left: 0;
     margin-right: auto;
-  }
 }
 
 .blog__item:nth-child(3n) {

@@ -10,23 +10,30 @@
 }
 
 .article__content {
+  height: 100%;
   display: flex;
+  justify-content: center;
   flex-direction: column;
   align-items: center;
   text-align: center;
-  padding: 67px 56px 20px;
-
-  @media (max-width: 1200px) {
-    padding: 70px 8% 20px;
-  }
+  //padding: 67px 56px 20px;
 
   @media (max-width: $tablet-width-max) {
-    padding: 70px 83px 40px;
+    width: 164px;
+    margin: 0 auto;
   }
 
-  @media (max-width: $mobile-width-only) {
-    padding: 45px 20px 15px;
-  }
+  //@media (max-width: 1200px) {
+  //  padding: 67px 8% 20px;
+  //}
+  //
+  //@media (max-width: $tablet-width-max) {
+  //  padding: 70px 83px 40px;
+  //}
+  //
+  //@media (max-width: $mobile-width-only) {
+  //  padding: 45px 20px 15px;
+  //}
 }
 
 .article__content time {

@@ -272,9 +272,17 @@
 .swiper-pagination-custom,
 .swiper-horizontal > .swiper-pagination-bullets,
 .swiper-pagination-bullets.swiper-pagination-horizontal {
-  bottom: 10px;
+  bottom: -2px;
   left: 0;
   width: 100%;
+
+  @media (max-width: $tablet-width-max) {
+    bottom: 26px;
+  }
+
+  @media (max-width: $mobile-width-only) {
+    bottom: 16px;
+  }
 }
 /* Bullets */
 .swiper-pagination-bullets-dynamic {

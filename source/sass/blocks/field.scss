@@ -7,6 +7,10 @@
   font-size: 14px;
   background-color: inherit;
   cursor: pointer;
+
+  @media (max-width: $tablet-width-max) {
+    padding: 0 0 14px;
+  }
 }
 
 .field input:hover::placeholder {
