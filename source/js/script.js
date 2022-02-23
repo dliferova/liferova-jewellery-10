@@ -116,12 +116,12 @@ let isModalOpened = false;
 pageHeader.addEventListener('click', (evt) => {
   if (evt.composedPath().find(item => item.classList && item.classList.contains('link-modal'))) {
     evt.preventDefault();
-    isModalOpened = true;
     controlPopupLogin();
   }
 })
 
 const controlPopupLogin = () => {
+  isModalOpened = !isModalOpened;
   loginPopup.classList.toggle('visually-hidden');
   loginPopup.classList.toggle('modal_opened');
   pageBody.classList.toggle('page__body_locked');
@@ -138,7 +138,6 @@ const onKeyPress = (evt) => {
 }
 
 loginPopupCLoseButton.addEventListener('click', () => {
-  isModalOpened = false;
   controlPopupLogin();
 });
 
@@ -149,6 +148,34 @@ document.body.addEventListener('click', (evt) => {
 })
 
 document.addEventListener('keydown', onKeyPress);
+
+// https://uxdesign.cc/how-to-trap-focus-inside-modal-to-make-it-ada-compliant-6a50f9a70700
+const focusableElements =
+  'button, [href], input, select, textarea, [tabindex]:not([tabindex="-1"])';
+
+const firstFocusableElement = loginPopup.querySelectorAll(focusableElements)[0];
+const focusableContent = loginPopup.querySelectorAll(focusableElements);
+const lastFocusableElement = focusableContent[focusableContent.length - 1];
+
+document.addEventListener('keydown', function(e) {
+  let isTabPressed = e.key === 'Tab' || e.keyCode === 9;
+
+  if (!isTabPressed) {
+    return;
+  }
+
+  if (e.shiftKey) {
+    if (document.activeElement === firstFocusableElement) {
+      lastFocusableElement.focus();
+      e.preventDefault();
+    }
+  } else {
+    if (document.activeElement === lastFocusableElement) {
+      firstFocusableElement.focus();
+      e.preventDefault();
+    }
+  }
+});
 
 const EMAIL_INPUT_VALUE_STORAGE_KEY = 'loginFormInputValue';
 
