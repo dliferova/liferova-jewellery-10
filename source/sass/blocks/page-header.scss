@@ -105,6 +105,20 @@
 .page-header__navigation_opened {
   @media (max-width: $tablet-width-max) {
     background-color: $background-menu;
+    position: fixed;
+    width: 100%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    min-height: calc(100vh - 210px);
+    z-index: 50;
+  }
+}
+
+.page-header__navigation-wrapper {
+  @media (max-width: $tablet-width-max) {
+    position: absolute;
+    min-height: 100vh;
+    width: 100%;
   }
 }
 
