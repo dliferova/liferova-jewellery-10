@@ -59,6 +59,12 @@
   }
 }
 
+.blog__item:nth-child(3n) .article__content {
+  @media (min-width: $desktop-width-min) {
+    padding-bottom: 38px;
+  }
+}
+
 .blog__item_theme_jewellery-care {
   background-image: url("../img/blog-care-desktop.jpg");
 
