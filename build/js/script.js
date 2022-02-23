@@ -188,6 +188,14 @@ const swiper = new Swiper('.swiper', {
       slidesPerGroup: 2,
     },
 
+    593: {
+      pagination: {
+        type: 'fraction',
+      },
+      slidesPerView: 3,
+      slidesPerGroup: 3,
+    },
+
     768: {
       pagination: {
         type: 'bullets',

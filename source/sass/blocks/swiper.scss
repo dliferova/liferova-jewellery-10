@@ -629,9 +629,6 @@ button.swiper-pagination-bullet {
   overflow: hidden;
 }
 
-
-
-
 .swiper {
   width: 1170px;
   height: 424px;
@@ -644,12 +641,17 @@ button.swiper-pagination-bullet {
     height: 409px;
   }
 
-  @media (max-width: $tablet-width-max) {
+  @media (max-width: $tablet-width-max) and (min-width: $tablet-width-min) {
     width: 678px;
     height: 497px;
   }
 
-  @media (max-width: $mobile-width-only) {
+  @media (max-width: 767px) and (min-width: 593px) {
+    width: 438px;
+    height: 286px;
+  }
+
+  @media (max-width: 592px) {
     width: 290px;
     height: 286px;
   }
