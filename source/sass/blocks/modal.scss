@@ -7,6 +7,7 @@
   display: flex;
   align-items: center;
   z-index: 101;
+  padding-top: 41px;
 }
 
 .modal_opened {
@@ -15,13 +16,14 @@
 
 .modal__wrapper {
   width: 430px;
-  min-height: 568px;
+  min-height: 586px;
   margin: 0 auto;
   background-image: url("../img/sweet-ice-cream-photography-desktop.jpg");
   background-repeat: no-repeat;
-  background-size: 100% 138px;
+  background-size: contain;
+  background-position: top;
   background-color: $article-background;
-  padding: 180px 0 60px;
+  padding: 138px 45px 25px;
   position: relative;
 
   @media (min-resolution: 2dppx) {
@@ -80,6 +82,11 @@
   justify-content: flex-start;
   max-width: 340px;
   margin: 0 auto;
+  padding: 50px 0 0 0;
+
+  @media (max-width: $tablet-width-max) {
+    padding: 0;
+  }
 
   @media (max-width: $mobile-width-only) {
     padding: 0 14px;
@@ -100,7 +107,7 @@
   color: $white;
   font-size: 16px;
   line-height: 130%;
-  margin: 0 0 28px;
+  margin: 0 0 14px;
   cursor: pointer;
 
   @media (max-width: $tablet-width-max) {
@@ -133,7 +140,7 @@
 }
 
 .modal__list-item:last-child {
-  margin: 0 0 43px;
+  margin: 0 0 38px;
 
   @media (max-width: $mobile-width-only) {
     margin: 0 0 34px;

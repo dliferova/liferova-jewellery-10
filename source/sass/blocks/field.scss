@@ -11,6 +11,10 @@
   @media (max-width: $tablet-width-max) {
     padding: 0 0 14px;
   }
+
+  @media (max-width: $mobile-width-only) {
+    padding: 0 0 9px;
+  }
 }
 
 .field input:hover::placeholder {
