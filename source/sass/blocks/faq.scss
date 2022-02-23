@@ -110,18 +110,16 @@
 }
 
 .faq__answer_show {
-  width: 523px;
   height: auto;
   z-index: 1;
   opacity: 1;
 
   @media (max-width: $tablet-width-max) {
-    width: 535px;
     padding-bottom: 22px;
   }
 
   @media (max-width: $mobile-width-only) {
-    width: 183px;
+    max-width: 75%;
     padding-bottom: 0;
   }
 }
@@ -134,10 +132,15 @@
   font-size: 16px;
   line-height: 130%;
   color: inherit;
+  max-width: 60%;
+
+  @media (max-width: $tablet-width-max) {
+    max-width: 86%;
+  }
 
   @media (max-width: $mobile-width-only) {
+    max-width: 100%;
     font-size: 14px;
-    max-width: 204px;
     line-height: 142%;
     max-height: 0;
   }
