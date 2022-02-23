@@ -161,7 +161,8 @@
   line-height: 130%;
   font-weight: 500;
   color: $text-black;
-  width: 100%;
+  width: 40px;
+  -webkit-appearance: none;
 }
 
 .filter__pseudo-check-input {
@@ -192,6 +193,21 @@
 
 .filter__input-checkbox:hover + .filter__label-check {
   opacity: 0.7;
+}
+
+.filter__input-checkbox:focus + .filter__label-check {
+  color: $brown-ordinary;
+  text-decoration: underline;
+}
+
+.filter__input-checkbox:focus + .filter__label-check > .filter__pseudo-check-input {
+  border: 1px solid rgba($brown-ordinary, 0.7);
+}
+
+.filter__input-checkbox:checked:focus + .filter__label-check > .filter__pseudo-check-input {
+  &::before {
+    background-color: rgba($brown-ordinary, 0.7)
+  }
 }
 
 .filter__control-button-wrapper {
