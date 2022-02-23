@@ -631,52 +631,49 @@ button.swiper-pagination-bullet {
 
 .swiper {
   width: 1170px;
-  height: 424px;
+  min-height: 424px;
 
   @media (max-width: 1280px) {
     width: 930px;
   }
 
   @media (max-width: 1024px) {
-    height: 409px;
+    min-height: 409px;
   }
 
   @media (max-width: $tablet-width-max) and (min-width: $tablet-width-min) {
     width: 678px;
-    height: 497px;
+    min-height: 497px;
   }
 
   @media (max-width: 767px) and (min-width: 593px) {
     width: 438px;
-    height: 286px;
+    min-height: 286px;
   }
 
   @media (max-width: 592px) {
     width: 290px;
-    height: 286px;
+    min-height: 286px;
   }
 }
 
 .swiper__item div {
   width: 301px;
-  height: 346px;
+  min-height: 346px;
 
   @media (max-width: 1280px) {
     width: 210px;
-    height: 214px;
-    background-color: #a89cc8;
+    min-height: 214px;
   }
 
   @media (max-width: $tablet-width-max) {
     margin: 0 auto;
     width: 324px;
-    height: 340px;
-    background-color: green;
+    min-height: 340px;
   }
 
   @media (max-width: $mobile-width-only) {
     width: 130px;
-    height: 136px;
-    background-color: royalblue;
+    min-height: 136px;
   }
 }
