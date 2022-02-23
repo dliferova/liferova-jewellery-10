@@ -33,7 +33,7 @@
               <button type="submit">
                 <span class="visually-hidden">Send</span>
               </button>
-              <input type="text" placeholder="Type here to search" id="search">
+              <input type="text" placeholder="Type here to search" id="search" name="search-request"  aria-label="Search through site content">
               <label for="search"></label>
             </form>
           </div>
@@ -572,7 +572,7 @@
             <p class="subscription__text">News and updates from CH. No spam, we promise.</p>
             <form action="https://echo.htmlacademy.ru/" method="get">
               <div class="field">
-                <input type="email" id="user-email-subscription" placeholder="Your E-mail">
+                <input type="email" id="user-email-subscription" name="email-subscription" placeholder="Your E-mail" required>
                 <label for="user-email-subscription"></label>
               </div>
               <button type="submit">
