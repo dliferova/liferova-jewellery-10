@@ -145,11 +145,24 @@
   }
 }
 
+.page-header__menu_nojs + .page-header__navigation_opened {
+  @media (max-width: $tablet-width-max) {
+    position: relative;
+  }
+}
+
 .page-header__navigation-wrapper {
   @media (max-width: $tablet-width-max) {
     position: absolute;
     min-height: 100vh;
     width: 100%;
+  }
+}
+
+.page-header__menu_nojs + .page-header__navigation_opened > .page-header__navigation-wrapper {
+  @media (max-width: $tablet-width-max) {
+    position: relative;
+    min-height: auto;
   }
 }
 
