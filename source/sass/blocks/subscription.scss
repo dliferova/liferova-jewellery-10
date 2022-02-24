@@ -4,7 +4,7 @@
   align-items: flex-end;
   justify-content: space-between;
   border-bottom: 1px solid white;
-  padding: 0 0 8px;
+  padding: 0 0 4px;
 
   @media (max-width: 1188px) {
     min-width: 416px;
@@ -22,6 +22,10 @@
 
 .subscription .field {
   width: 72%;
+
+  @media (max-width: $tablet-width-max) {
+    padding-bottom: 7px;
+  }
 
   @media (max-width: $mobile-width-only) {
     width: 58%;
@@ -67,7 +71,7 @@
 
   display: inline-flex;
   align-items: center;
-  padding: 0;
+  padding: 0 0 7px;
 
   @media (max-width: $mobile-width-only) {
     padding: 8px 0;
