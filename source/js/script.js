@@ -209,7 +209,10 @@ const swiper = new Swiper('.swiper', {
   breakpoints: {
     320: {
       pagination: {
-        type: 'fraction',
+        type: 'custom',
+        renderCustom: (swiper, current, total) => {
+          return '<span>' + current + ' of ' + total + '</span>'
+        }
       },
       slidesPerView: 2,
       slidesPerGroup: 2,
@@ -217,7 +220,10 @@ const swiper = new Swiper('.swiper', {
 
     593: {
       pagination: {
-        type: 'fraction',
+        type: 'custom',
+        renderCustom: (swiper, current, total) => {
+          return '<span>' + current + ' of ' + total + '</span>'
+        }
       },
       slidesPerView: 3,
       slidesPerGroup: 3,
