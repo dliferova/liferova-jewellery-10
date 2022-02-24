@@ -4,6 +4,7 @@
   align-items: flex-end;
   justify-content: space-between;
   border-bottom: 1px solid white;
+  padding: 0 0 8px;
 
   @media (max-width: 1188px) {
     min-width: 416px;
@@ -15,6 +16,7 @@
 
   @media (max-width: $mobile-width-only) {
     min-width: 100%;
+    padding: 0 0 4px;
   }
 }
 
@@ -45,16 +47,19 @@
   font-size: 16px;
   line-height: 130%;
   color: $grey;
-  margin: 0 0 37px;
+  margin: 0 0 45px;
+
+  @media (max-width: $tablet-width-max) {
+    margin: 0 0 43px;
+  }
 
   @media (max-width: $mobile-width-only) {
     max-width: 226px;
-    margin: 0 0 34px;
+    margin: 0 0 29px;
   }
 }
 
 .subscription button {
-  padding: 10px 0;
   cursor: pointer;
   border: none;
   background-color: transparent;
@@ -62,6 +67,7 @@
 
   display: inline-flex;
   align-items: center;
+  padding: 0;
 
   @media (max-width: $mobile-width-only) {
     padding: 8px 0;
@@ -71,7 +77,8 @@
 .subscription button span {
   color: $white;
   font-size: 16px;
-  margin-right: 20px;
+  line-height: 130%;
+  margin-right: 12px;
 }
 
 
