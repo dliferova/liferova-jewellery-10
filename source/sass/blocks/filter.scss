@@ -25,11 +25,15 @@
   border: 1px solid $brown-ordinary;
   border-top: none;
   border-bottom: none;
-  padding: 0 35px 20px;
+  padding: 0 35px 24px;
 }
 
 .filter__content li {
-  margin-bottom: 8px;
+  margin-bottom: 10px;
+}
+
+.filter__content li:last-of-type {
+  margin-bottom: 0;
 }
 
 .filter__content {
@@ -111,20 +115,20 @@
   height: 2px;
   width: 100%;
   background-color: $article-background;
-  top: 7px;
+  top: 2px;
 }
 
 .filter__bar {
   position: absolute;
   height: 1px;
-  width: 46%;
+  width: 50%;
   background-color: $brown-ordinary;
   left: 28%;
 }
 
 .filter__toggle {
   position: absolute;
-  top: 0;
+  top: -6px;
   width: 14px;
   height: 14px;
   padding: 0;
@@ -135,7 +139,7 @@
 }
 
 .filter__toggle_max {
-  left: 77%;
+  left: 78%;
 }
 
 .filter__toggle_min {
@@ -147,7 +151,7 @@
   position: absolute;
   align-items: baseline;
   left: 21%;
-  top: 33%;
+  top: 27%;
 }
 
 .filter__price-range label:last-of-type {
@@ -173,6 +177,8 @@
   border: 1px solid $brown-ordinary;
   position: relative;
   margin: 0 9px 0 0;
+  font-size: 14px;
+  line-height: 130%;
 }
 
 .filter__label-check {
