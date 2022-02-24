@@ -21,7 +21,7 @@
   background-color: $article-background;
   background-position: left;
   background-repeat: no-repeat;
-  background-size: 285px auto;
+  background-size: cover;
   overflow: hidden;
 
   @media (max-width: $tablet-width-max) {
@@ -61,7 +61,7 @@
 
 .blog__item:nth-child(3n) .article__content {
   @media (min-width: $desktop-width-min) {
-    padding-bottom: 38px;
+    padding-bottom: 48px;
   }
 }
 
